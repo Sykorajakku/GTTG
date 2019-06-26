@@ -1,0 +1,1135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTTG.Model</name>
+    </assembly>
+    <members>
+        <member name="T:GTTG.Model.Lines.ITrainPath">
+            <summary>
+            Contract for train path created from schedule. 
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.PointsByTrainPathEvents">
+            <summary>
+            Maps <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> of updated schedule to index of point in path and the point itself.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.TrainPathEvents">
+            <summary>
+            Provides all mapped movement events of updated schedule.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.LinePaint">
+            <summary>
+            Line to create and draw train path from.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.Item(System.Int32)">
+            <summary>
+            Points of train path.
+            </summary>
+            <param name="index">Index in train path with number of points equal to <see cref="P:GTTG.Model.Lines.ITrainPath.PointCount"/>.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Lower than 0 or higher or equal than <see cref="P:GTTG.Model.Lines.ITrainPath.PointCount"/>.</exception>
+            <returns>Point at specified index.</returns>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.PointCount">
+            <summary>
+            Number of points in path.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.Clear">
+            <summary>
+            Reset train path and removes points. Needs to create new with <see cref="M:GTTG.Model.Lines.ITrainPath.Update(System.Collections.Immutable.ImmutableArray{GTTG.Model.Model.Events.TrainEvent})"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.Arrange">
+            <summary>
+            Arranges points in path.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.Update(System.Collections.Immutable.ImmutableArray{GTTG.Model.Model.Events.TrainEvent})">
+            <summary>
+            Updates value from which train path is created.
+            </summary>
+            <param name="schedule">Schedule of events converted path.</param>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.Draw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <summary>
+            Draws train path on canvas.
+            </summary>
+            <param name="drawingCanvas">Drawing canvas to draw onto.</param>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.MeasurePathStrokeWidth">
+            <summary>
+            Measures maximal path stroke width with ornaments included.
+            </summary>
+            <returns>Measured stroke width.</returns>
+        </member>
+        <member name="M:GTTG.Model.Lines.ITrainPath.DistanceFromPoint(SkiaSharp.SKPoint)">
+            <summary>
+            Measures closest distance of train path to provided point.
+            </summary>
+            <param name="point">Provided point to determine distance from.</param>
+            <returns>Closest distance of path to provided point.</returns>
+        </member>
+        <member name="P:GTTG.Model.Lines.ITrainPath.PathColor">
+            <summary>
+            Color of path.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Lines.LinePaint">
+            <summary>
+            Line with modifiable stroke width.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.LinePaint.DesiredStrokeWidth">
+            <summary>
+            Default stroke width.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.LinePaint.ArrangedStrokeWidth">
+            <summary>
+            Actual stroke width.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.LinePaint.Paint">
+            <summary>
+            Wrapped paint with modified stroke width.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Lines.LinePaint.#ctor(System.Single,SkiaSharp.SKPaint)">
+            <summary>
+            Creates line with desired size from paint by <see cref="M:SkiaSharp.SKPaint.Clone"/>.
+            </summary>
+            <param name="desiredStrokeWidth">Desired height of line.</param>
+            <param name="paint">Paint with stroke width to modify.</param>
+        </member>
+        <member name="M:GTTG.Model.Lines.LinePaint.#ctor(System.Single,SkiaSharp.SKColor)">
+            <summary>
+            Creates line and paint with desired size from color.
+            </summary>
+            <param name="desiredStrokeWidth">Desired height of line.</param>
+            <param name="color">Color set to paint.</param>
+        </member>
+        <member name="M:GTTG.Model.Lines.LinePaint.Arrange(System.Single)">
+            <summary>
+            Assigns new value to actual stroke width <see cref="P:GTTG.Model.Lines.LinePaint.ArrangedStrokeWidth"/>.
+            </summary>
+            <param name="height">Arranged stroke width to use. Modifies <see cref="P:GTTG.Model.Lines.LinePaint.Paint"/> stroke width.</param>
+        </member>
+        <member name="M:GTTG.Model.Lines.LinePaint.Measure">
+            <summary>
+            Measures desired stroke width.
+            </summary>
+            <returns>Value of <see cref="P:GTTG.Model.Lines.LinePaint.DesiredStrokeWidth"/>.</returns>
+        </member>
+        <member name="M:GTTG.Model.Lines.LinePaint.Clone">
+            <summary>
+            Creates new <see cref="T:GTTG.Model.Lines.LinePaint"/>.
+            </summary>
+            <returns><see cref="T:GTTG.Model.Lines.LinePaint"/> with cloned value and instance of <see cref="P:GTTG.Model.Lines.LinePaint.Paint"/></returns>
+        </member>
+        <member name="T:GTTG.Model.Lines.TrainPath">
+            <summary>
+            Creates train path from <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> of updated schedule.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.PointsByTrainPathEvents">
+            <inheritdoc />
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.TrainPathEvents">
+            <inheritdoc />
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath.ViewProvider">
+            <summary>
+            View provider to converts <see cref="T:System.DateTime"/> values to horizontal values.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath.TrainLinePaint">
+            <summary>
+            <see cref="P:GTTG.Model.Lines.TrainPath.LinePaint"/> to draw <see cref="F:GTTG.Model.Lines.TrainPath.SkTrainPath"/>.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath.SkTrainPath">
+            <summary>
+            <see cref="T:SkiaSharp.SKPath"/> of points that forms path of train in <see cref="T:GTTG.Core.Drawing.Canvases.ContentDrawingCanvas"/>.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath.SegmentRegistry">
+            <summary>
+            Provides segments of position of horizontal lines where points <see cref="F:GTTG.Model.Lines.TrainPath.SkTrainPath"/> are placed.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath._PointsByTrainPathEvents">
+            <summary>
+            Maps <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> to index in <see cref="F:GTTG.Model.Lines.TrainPath.SkTrainPath"/> and it's point.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath._trainPathEvents">
+            <summary>
+            <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> as schedule to be arranged to form <see cref="F:GTTG.Model.Lines.TrainPath.SkTrainPath"/>.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Lines.TrainPath.SegmentRegistrations">
+            <summary>
+            Keeps track of segments where line was registered for measure.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.#ctor(GTTG.Core.Component.IViewProvider,GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.LineType,GTTG.Core.Strategies.Implementations.MeasureableSegment},GTTG.Model.Lines.LinePaint)">
+            <summary>
+            Creates empty train path.
+            </summary>
+            <param name="viewProvider">Converter of date time event values to horizontal positions.</param>
+            <param name="segmentRegistry">Registry of lines providing it's vertical position.</param>
+            <param name="linePaint">Line to create path from.</param>
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.PointCount">
+            <inheritdoc />
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.LinePaint">
+            <inheritdoc />
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.Arrange">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.Update(System.Collections.Immutable.ImmutableArray{GTTG.Model.Model.Events.TrainEvent})">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.Draw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.MeasurePathStrokeWidth">
+            <inheritdoc />
+        </member>
+        <member name="M:GTTG.Model.Lines.TrainPath.DistanceFromPoint(SkiaSharp.SKPoint)">
+            <inheritdoc />
+        </member>
+        <member name="P:GTTG.Model.Lines.TrainPath.PathColor">
+            <inheritdoc />
+        </member>
+        <member name="T:GTTG.Model.Model.Events.TrainEventType">
+            <summary>
+            Type of train movement event in station.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Model.Events.TrainEventType.Arrival">
+            <summary>
+            Event of train arriving to a station.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Model.Events.TrainEventType.Departure">
+            <summary>
+            Event of train leaving a station.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Model.Events.TrainEventType.Passage">
+            <summary>
+            Event of train passing through a station.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Model.Events.TrainEvent">
+            <summary>
+            Base class for train events.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.TrainEventType">
+            <summary>
+            Movement type of event in station.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.DateTime">
+            <summary>
+            <see cref="T:System.DateTime"/> when event occurs.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.Track">
+            <summary>
+            <see cref="T:GTTG.Model.Model.Infrastructure.Track"/> where event occurs.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.Station">
+            <summary>
+            <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> where event occurs.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.IsArrival">
+            <summary>
+            Determines whether event is arrival to the station.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.IsPassage">
+            <summary>
+            Determines whether the event is passage through the station.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Events.TrainEvent.IsDeparture">
+            <summary>
+            Determines whether the event is departure from the station.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Model.Events.TrainEvent.#ctor(System.DateTime,GTTG.Model.Model.Infrastructure.Station,GTTG.Model.Model.Infrastructure.Track,GTTG.Model.Model.Events.TrainEventType)">
+            <summary>
+            Creates a new event.
+            </summary>
+            <param name="dateTime">Time value of event.</param>
+            <param name="station">Station where event occurs.</param>
+            <param name="track">Track of the station where event occurs.</param>
+            <param name="trainEventType">Type of the event.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="station"/> does not contain <paramref name="track"/>.</exception>
+        </member>
+        <member name="T:GTTG.Model.Model.Infrastructure.Railway">
+            <summary>Represents railway with stations which contains tracks.</summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Infrastructure.Railway.Stations">
+            <summary>Stations in railway.</summary>
+        </member>
+        <member name="M:GTTG.Model.Model.Infrastructure.Railway.#ctor(System.Collections.Generic.IEnumerable{GTTG.Model.Model.Infrastructure.Station})">
+            <summary>Initializes a new instance of the <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> with stations.</summary>
+            <param name="stations">Stations placed in <see cref="P:GTTG.Model.Model.Infrastructure.Railway.Stations"/>.</param>
+        </member>
+        <member name="T:GTTG.Model.Model.Infrastructure.Station">
+            <summary>Represents station which contains tracks.</summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Infrastructure.Station.Tracks">
+            <summary>Tracks in the station.</summary>
+        </member>
+        <member name="M:GTTG.Model.Model.Infrastructure.Station.#ctor(System.Collections.Generic.IEnumerable{GTTG.Model.Model.Infrastructure.Track})">
+            <summary>Initializes a new instance of the <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> with tracks.</summary>
+            <param name="tracks">Tracks placed in <see cref="P:GTTG.Model.Model.Infrastructure.Station.Tracks"/>.</param>
+        </member>
+        <member name="T:GTTG.Model.Model.Infrastructure.Track">
+            <summary>Represents track in station.</summary>
+        </member>
+        <member name="T:GTTG.Model.Model.Traffic.Traffic`1">
+            <summary>Trains as traffic in <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/>.</summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Traffic.Traffic`1.Trains">
+            <summary>Trains in traffic.</summary>
+        </member>
+        <member name="M:GTTG.Model.Model.Traffic.Traffic`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Initializes a new instance of the <see cref="T:GTTG.Model.Model.Traffic.Traffic`1"/> with trains.</summary>
+            <param name="trains">Trains placed in <see cref="P:GTTG.Model.Model.Traffic.Traffic`1.Trains"/>.</param>
+        </member>
+        <member name="T:GTTG.Model.Model.Traffic.Train">
+            <summary>Train in railway.</summary>
+        </member>
+        <member name="P:GTTG.Model.Model.Traffic.Train.Schedule">
+            <summary>Gets or sets current schedule of train.</summary>
+        </member>
+        <member name="M:GTTG.Model.Model.Traffic.Train.#ctor(System.Collections.Generic.IEnumerable{GTTG.Model.Model.Events.TrainEvent})">
+            <summary>Initializes a new instance of the <see cref="T:GTTG.Model.Model.Traffic.Train"/> with it's schedule.</summary>
+            <param name="schedule">Collection of <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> as actual schedule of the train.</param>
+        </member>
+        <member name="T:GTTG.Model.Strategies.ElementsOrder">
+            <summary>
+            Flag for <see cref="T:GTTG.Model.Strategies.Container"/> to determine order of added elements.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.ElementsOrder.FirstFromLeft">
+            <summary>
+            Adds elements from the left.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.ElementsOrder.FirstFromRight">
+            <summary>
+            Adds elements from the right.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Container">
+            <summary>
+            Groups multiple <see cref="T:GTTG.Core.Base.ViewElement"/> into one container to positioned in strategy.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Container.ElementsOrder">
+            <summary>
+            Determines from which side are elements added.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.Container.Components">
+            <summary>
+            Elements in container.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.#ctor(GTTG.Model.Strategies.ElementsOrder)">
+            <summary>
+            Creates empty container with determined order for adding elements.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.AddComponent(GTTG.Core.Base.ViewElement)">
+            <summary>
+            Adds element to container.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.MeasureOverride(SkiaSharp.SKSize)">
+            <summary>
+            Measure width as sum of widths of all elements in container. Height is equal to maximal height from elements.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Arranges elements in container. As managed by strategy, expects same size as DesiredSize.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Container.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Converters.TrainEventPlacementConverter">
+            <summary>
+            Converts <see cref="T:GTTG.Model.Strategies.Types.TrainEventPlacement"/> to <see cref="T:GTTG.Model.Strategies.Types.SegmentType`1"/>
+            and provides vector from <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> point to neighbor <see cref="T:GTTG.Model.Model.Events.TrainEvent"/> in provided train path.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Converters.TrainEventPlacementConverter.#ctor(GTTG.Model.Lines.ITrainPath)">
+            <summary>Creates convertor for provided train path.</summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Converters.TrainEventPlacementConverter.ComputeVectorFromEvent(GTTG.Model.Model.Events.TrainEvent)">
+            <summary>
+            Returns vector from point representing event to neighbor event in path direction depending on event type.
+            If first or last event in schedule provided, returns vector in opposite direction multiplied by (-1,-1).
+            </summary>
+            <returns>
+            SegmentBase -- point in path <paramref name="trainEvent"/> that represents <paramref name="trainEvent"/>.
+            VectorFromBase -- vector in direction to other point depending on <see cref="P:GTTG.Model.Model.Events.TrainEvent.TrainEventType"/>.
+            For departure and passage picks points of next events in schedule.
+            For arrival picks points of previous events to schedule.
+            </returns>
+            <exception cref="T:System.ArgumentException">If <paramref name="trainEvent"/> conversion can't be determined.</exception>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Converters.TrainEventPlacementConverter.GTTG#Core#Strategies#Interfaces#ITypeConverter{GTTG#Model#Strategies#Types#TrainEventPlacement,GTTG#Model#Strategies#Types#SegmentType{GTTG#Model#Model#Infrastructure#Track}}#Convert(GTTG.Model.Strategies.Types.TrainEventPlacement)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">If <paramref name="eventPlacement"/> conversion can't be determined.</exception>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Converters.TrainEventPlacementConverter.GTTG#Core#Strategies#Interfaces#ITypeConverter{GTTG#Model#Strategies#Types#TrainEventPlacement,GTTG#Model#Strategies#Types#SegmentType{GTTG#Model#Model#Infrastructure#Station}}#Convert(GTTG.Model.Strategies.Types.TrainEventPlacement)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentException">If <paramref name="eventPlacement"/> conversion can't be determined.</exception>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1">
+            <summary>
+            Docks elements into segments of <see cref="T:GTTG.Model.Strategies.Types.SegmentType`1"/> type.
+            Element is placed on middle of line segment of intersection of train path and particular segment.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.#ctor(GTTG.Model.Lines.ITrainPath,GTTG.Model.Strategies.Converters.TrainEventPlacementConverter,GTTG.Core.Strategies.Implementations.StrategyManager{GTTG.Model.Strategies.Types.TrainEventPlacement,`0,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>Creates docker for particular train path.</summary>
+            <param name="trainPath">Train path on which elements are positioned.</param>
+            <param name="trainEventPlacementConverter">Converter from which segments are received.</param>
+            <param name="strategyManager">Manager with elements to position.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.Dock">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.DockLowerAcute(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in upper segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="lowerBoundOrigin">Point on lower horizontal line of segment.</param>
+            <param name="vectorToUpperBound">Train path segment from <paramref name="lowerBoundOrigin"/> to upper horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.DockUpperAcute(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in lower segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="upperBoundOrigin">Intersection of upper horizontal line of segment and train path.</param>
+            <param name="vectorToLowerBound">Train path segment from <paramref name="upperBoundOrigin"/> to lower horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.DockLowerObtuse(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in upper segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="upperBoundOrigin">Intersection of upper horizontal line of segment and train path.</param>
+            <param name="vectorToLowerBound">Train path segment from <paramref name="upperBoundOrigin"/> to lower horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.DockUpperObtuse(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in lower segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="upperBoundOrigin">Intersection of upper horizontal line of segment and train path.</param>
+            <param name="vectorToLowerBound">Train path segment from <paramref name="upperBoundOrigin"/> to lower horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.ScaleToFitSegment(`0,GTTG.Core.Strategies.Interfaces.ISegment,SkiaSharp.SKPoint)">
+            <summary>
+            Arranges element with it's desired size and scales if does not match segment height.
+            </summary>
+            <param name="element">Element to measure and scale.</param>
+            <param name="segment">Segment where element is placed.</param>
+            <param name="segmentVector">Line segment of train path intersection the segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.StationStrategyDocker`1.MeasureHeight(GTTG.Model.Strategies.Types.TrainEventPlacement,`0,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Interfaces.ISegment)">
+            <summary>
+            Measures height of element after being positioned by strategy as elements could be rotated.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1">
+            <summary>
+            Docks elements into segments of <see cref="T:GTTG.Model.Strategies.Types.SegmentType`1"/> type.
+            Element is placed on horizontal line of segment depending on it's type nearby train path.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.#ctor(GTTG.Model.Lines.ITrainPath,GTTG.Model.Strategies.Converters.TrainEventPlacementConverter,GTTG.Core.Strategies.Implementations.StrategyManager{GTTG.Model.Strategies.Types.TrainEventPlacement,`0,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>Creates docker for particular train path.</summary>
+            <param name="trainPath">Train path nearby which elements are positioned.</param>
+            <param name="trainEventPlacementConverter">Converter from which segments are received.</param>
+            <param name="strategyManager">Manager with elements to position.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.Dock">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.DockUpperAcute(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in lower segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="upperBoundOrigin">Intersection of upper horizontal line of segment and train path.</param>
+            <param name="vectorToLowerBound">Train path segment from <paramref name="upperBoundOrigin"/> to lower horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.DockLowerAcute(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in upper segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="lowerBoundOrigin">Point on lower horizontal line of segment.</param>
+            <param name="vectorToUpperBound">Train path segment from <paramref name="lowerBoundOrigin"/> to upper horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.DockUpperObtuse(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in lower segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="upperBoundOrigin">Intersection of upper horizontal line of segment and train path.</param>
+            <param name="vectorToLowerBound">Train path segment from <paramref name="upperBoundOrigin"/> to lower horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.DockLowerObtuse(`0,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Docks element in upper segment to acute angle.
+            </summary>
+            <param name="element">Element to dock.</param>
+            <param name="lowerBoundOrigin">Point on lower horizontal line of segment.</param>
+            <param name="vectorToUpperBound">Train path segment from <paramref name="lowerBoundOrigin"/> to upper horizontal line of segment.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.ResizeContainerToFitSegment(`0,GTTG.Core.Strategies.Interfaces.ISegment)">
+            <summary>
+            Arranges element with it's desired size and scales if does not match segment height.
+            </summary>
+            <param name="element">Element to measure and scale.</param>
+            <param name="segment">Segment where element is placed.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Dockers.TracksStrategyDocker`1.MeasureHeight(GTTG.Model.Strategies.Types.TrainEventPlacement,`0,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Interfaces.ISegment)">
+            <summary>Measures height of element after being positioned by strategy. Returns height of element from arrange.</summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.IStrategy">
+            <summary>
+            Represents contract for strategy implementation used by <see cref="T:GTTG.Model.ViewModel.Traffic.TrainView`1"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.IStrategy.Dock">
+            <summary>
+            Rearranges visuals in strategy.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.IStrategy.Clear">
+            <summary>
+            Removes all visuals from strategy.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Strategy">
+            <summary>
+            Represents strategies applicable to <see cref="T:GTTG.Model.ViewModel.Traffic.TrainView`1"/>.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Strategy.TrackStrategyDocker">
+            <summary>
+            Docker for strategy to place elements in segments above or below horizontal line of tracks.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Strategy.StationStrategyDocker">
+            <summary>
+            Docker for strategy to place elements in segments between stations.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Strategy.TrackStrategyManager">
+            <summary>
+            Manager to which elements are added to be placed below or above horizontal line of tracks in angles intersecting train's path. 
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Strategy.StationStrategyManager">
+            <summary>
+            Manager to which elements are added to be placed in segments between stations on train's path. 
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.#ctor(GTTG.Model.Lines.ITrainPath,GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Implementations.MeasureableSegment},GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>
+            Creates instance with strategies applicable to particular train by using it's <see cref="T:GTTG.Model.Lines.ITrainPath"/>.
+            </summary>
+            <param name="trainPath">Path of train to which strategies are applied.</param>
+            <param name="trackSegmentRegistry">TrackSegments above or below horizontal line of tracks.</param>
+            <param name="stationSegmentRegistry">TrackSegments between stations.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.#ctor(GTTG.Core.Strategies.Interfaces.IStrategyDocker,GTTG.Core.Strategies.Interfaces.IStrategyDocker,GTTG.Core.Strategies.Implementations.StrategyManager{GTTG.Model.Strategies.Types.TrainEventPlacement,GTTG.Core.Base.ViewElement,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Implementations.MeasureableSegment},GTTG.Core.Strategies.Implementations.StrategyManager{GTTG.Model.Strategies.Types.TrainEventPlacement,GTTG.Core.Base.ViewElement,GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>
+            Creates instance with strategies applicable to particular train by using it's <see cref="T:GTTG.Model.Lines.ITrainPath"/>.
+            </summary>
+            <param name="trackStrategyDocker">Docker for strategy to place elements in segments above or below horizontal line of tracks.</param>
+            <param name="stationStrategyDocker">Docker for strategy to place elements in segments between stations.</param>
+            <param name="trackStrategyManager">Manager to which elements are added to be placed below or above horizontal line of tracks in angles intersecting train's path.</param>
+            <param name="stationStrategyManager">Manager to which elements are added to be placed in segments between stations on train's path.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.HasHit(SkiaSharp.SKPoint)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.Dock">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.Clear">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Strategy.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Types.AnglePlacement">
+            <summary>
+            Selection of angle of line intersecting horizontal line where element should be placed.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.Types.AnglePlacement.Obtuse">
+            <summary>
+            Element is placed in obtuse angle.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.Types.AnglePlacement.Acute">
+            <summary>
+            Element is placed in acute angle.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Types.LineType">
+            <summary>
+            Represents horizontal line of track.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Types.LineType.Track">
+            <summary>
+            <see cref="P:GTTG.Model.Strategies.Types.LineType.Track"/> to which horizontal line belongs.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.LineType.Of(GTTG.Model.Model.Infrastructure.Track)">
+            <summary>
+            Creates line type of particular track.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.LineType.Equals(GTTG.Model.Strategies.Types.LineType)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.LineType.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.LineType.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Types.SegmentPlacement">
+            <summary>
+            Determines vertical placement of segment above or below horizontal line.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.Types.SegmentPlacement.Upper">
+            <summary>
+            Segment is placed above horizontal line.
+            </summary>
+        </member>
+        <member name="F:GTTG.Model.Strategies.Types.SegmentPlacement.Lower">
+            <summary>
+            Segment is placed below horizontal line.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Types.SegmentType`1">
+            <summary>
+            Determines placement by vertical position above or below some object.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Types.SegmentType`1.Type">
+            <summary>
+            Instance of object above or below which is placement determined. 
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Types.SegmentType`1.SegmentPlacement">
+            <summary>
+            Vertical position of placement above or below some object.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.SegmentType`1.#ctor(`0,GTTG.Model.Strategies.Types.SegmentPlacement)">
+            <summary>
+            Creates placement determined by vertical position.
+            </summary>
+            <param name="type">Type of object above or below is placement determined</param>
+            <param name="segmentPlacement">Type of vertical placement</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.SegmentType`1.Equals(GTTG.Model.Strategies.Types.SegmentType{`0})">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.SegmentType`1.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.SegmentType`1.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.Strategies.Types.TrainEventPlacement">
+            <summary>
+            Determines placement by event which is represented as point on horizontal line
+            through which passes intersecting line. Determines placement more accurately by
+            selecting angle of formed line intersection.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Types.TrainEventPlacement.AnglePlacement">
+            <summary>
+            Placement to angle.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.Strategies.Types.TrainEventPlacement.TrainEvent">
+            <summary>
+            Placement to train event represented as point. 
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.TrainEventPlacement.#ctor(GTTG.Model.Model.Events.TrainEvent,GTTG.Model.Strategies.Types.AnglePlacement)">
+            <summary>
+            Creates placement determined by event and angle.
+            </summary>
+            <param name="trainEvent">Placement to train event.</param>
+            <param name="anglePlacement">Placement to angle.</param>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.TrainEventPlacement.Equals(GTTG.Model.Strategies.Types.TrainEventPlacement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.TrainEventPlacement.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.Strategies.Types.TrainEventPlacement.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.InfrastructureViewElement">
+            <summary>
+            Represents view element of infrastructure with infinite width.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.InfrastructureViewElement.#ctor">
+            <summary>
+            Creates infrastructure view element with infinite width.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Railways.IRailwayViewFactory`3">
+            <summary>
+            Factory for railway view classes deriving from <see cref="T:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2"/>.
+            </summary>
+            <typeparam name="TRailwayView">Implementation of railway view.</typeparam>
+            <typeparam name="TStationView">Implementation of railway view contains stations views of <typeparamref name="TStationView"/>.</typeparam>
+            <typeparam name="TTrackView"><typeparamref name="TStationView"/> contains track views of <typeparamref name="TTrackView"/>.</typeparam>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.IRailwayViewFactory`3.CreateRailwayView(GTTG.Model.Model.Infrastructure.Railway)">
+            <summary>
+            Creates specific implementation of railway view from railway instance.
+            </summary>
+            <param name="railway"><see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> instance which is backed by this view.</param>
+            <returns>Implementation of railway view derived from <see cref="T:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2"/>.</returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2">
+            <summary>
+            Represents visualization of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/>.
+            </summary>
+            <typeparam name="TStationView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/> used by this instance.</typeparam>
+            <typeparam name="TTrackView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView"/> used by this instance.</typeparam>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway">
+            <summary>
+            Instance of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/> being visualized.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.StationViews">
+            <summary>
+            Visualization of stations in <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.#ctor(GTTG.Model.Model.Infrastructure.Railway,GTTG.Model.ViewModel.Infrastructure.Stations.IStationViewFactory{`0,`1})">
+            <summary>
+            Creates visualization of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/>.
+            </summary>
+            <param name="railway">Instance of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/> to be visualized.</param>
+            <param name="stationViewFactory">Interface with factory method to convert list of <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> instances in <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.Railway"/> to <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.StationViews"/>.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.MeasureOverride(SkiaSharp.SKSize)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Arranges <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.StationViews"/> proportionally in <paramref name="finalSize"/> height.
+            If height returned from <see cref="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.MeasureOverride(SkiaSharp.SKSize)"/> is higher than <paramref name="finalSize"/>,
+            stations receives in <see cref="M:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.ArrangeOverride(SkiaSharp.SKSize)"/> scaled desired height.
+            Otherwise remaining space is split equally between stations.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2">
+            <summary>
+            Represents visualization of <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> with segments to which elements in strategies can be placed.
+            </summary>
+            <typeparam name="TStationView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/> used by this instance.</typeparam>
+            <typeparam name="TTrackView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView"/> used by this instance.</typeparam>
+        </member>
+        <member name="F:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.StationSegments">
+            <summary>
+            Segment registry where created segments above and below station were registered. 
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.#ctor(GTTG.Model.Model.Infrastructure.Railway,GTTG.Model.ViewModel.Infrastructure.Stations.IStationViewFactory{`0,`1},GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>
+            Creates visualization of <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> and segments placed to <paramref name="stationSegments"/>.
+            </summary>
+            <param name="railway">Instance of <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> to be visualized.</param>
+            <param name="stationViewFactory">Interface with factory method to convert list of <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> instances in <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> to <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.StationViews"/>.</param>
+            <param name="stationSegments">Registry where segments are registered.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.OnSegmentRegistration(GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Station},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>
+            Registers segments to <see cref="F:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.StationSegments"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.MeasureOverride(SkiaSharp.SKSize)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Arranges <see cref="P:GTTG.Model.ViewModel.Infrastructure.Railways.RailwayView`2.StationViews"/> and segments proportionally in <paramref name="finalSize"/> height.
+            If height returned from <see cref="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.MeasureOverride(SkiaSharp.SKSize)"/> is higher than <paramref name="finalSize"/>,
+            stations and segments receives in <see cref="M:GTTG.Model.ViewModel.Infrastructure.Railways.StrategyRailwayView`2.ArrangeOverride(SkiaSharp.SKSize)"/> scaled desired height.
+            Otherwise remaining space is split equally between stations.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Stations.IStationViewFactory`2">
+            <summary>
+            Factory for station view classes.
+            </summary>
+            <typeparam name="TStationView">Station view class deriving from <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/>.</typeparam>
+            <typeparam name="TTrackView"><typeparamref name="TStationView"/> contains track views of <typeparamref name="TTrackView"/>.</typeparam>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.IStationViewFactory`2.CreateStationView(GTTG.Model.Model.Infrastructure.Station)">
+            <summary>
+            Creates specific implementation of station view from station instance.
+            </summary>
+            <param name="station"><see cref="T:GTTG.Model.Model.Infrastructure.Station"/> instance visualized by this view.</param>
+            <returns>Implementation of station view derived from <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/>.</returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1">
+            <summary>
+            Represents visualization of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/>.
+            </summary>
+            <typeparam name="TTrackView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView"/> used by this instance.</typeparam>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station">
+            <summary>
+            Instance of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station"/> being visualized.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.TrackViews">
+            <summary>
+            Visualization of tracks in <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.#ctor(GTTG.Model.Model.Infrastructure.Station,GTTG.Model.ViewModel.Infrastructure.Tracks.ITrackViewFactory{`0})">
+            <summary>
+            Creates visualization of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station"/>.
+            </summary>
+            <param name="station">Instance of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station"/> to be visualized.</param>
+            <param name="trackViewFactory">Interface with factory method to convert list of <see cref="T:GTTG.Model.Model.Infrastructure.Track"/> instances in <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.Station"/> to <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.TrackViews"/>.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.MeasureOverride(SkiaSharp.SKSize)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Arranges <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.TrackViews"/> proportionally in <paramref name="finalSize"/> height.
+            If height returned from <see cref="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.MeasureOverride(SkiaSharp.SKSize)"/> is higher than <paramref name="finalSize"/>,
+            tracks receives in <see cref="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.ArrangeOverride(SkiaSharp.SKSize)"/> scaled desired height.
+            Otherwise remaining space is split equally between tracks.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1">
+            <summary>
+            Represents visualization of <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> with segments to which elements in strategies can be placed.
+            </summary>
+            <typeparam name="TTrackView">Concrete implementation of <see cref="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView"/> used by this instance.</typeparam>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.TrackSegments">
+            <summary>
+            Segment registry where created segments above and below tracks were registered.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.#ctor(GTTG.Model.Model.Infrastructure.Station,GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Implementations.MeasureableSegment},GTTG.Model.ViewModel.Infrastructure.Tracks.ITrackViewFactory{`0})">
+            <summary>
+            Creates visualization of <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> and segments placed to <paramref name="trackSegments"/>.
+            </summary>
+            <param name="station">Instance of <see cref="T:GTTG.Model.Model.Infrastructure.Railway"/> to be visualized.</param>
+            <param name="trackViewFactory">Interface with factory method to convert list of <see cref="T:GTTG.Model.Model.Infrastructure.Track"/> instances in <see cref="T:GTTG.Model.Model.Infrastructure.Station"/> to <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/>.</param>
+            <param name="trackSegments">Registry where segments are registered.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.RegisterStationSegments(GTTG.Core.Strategies.Interfaces.ISegmentRegistry{GTTG.Model.Strategies.Types.SegmentType{GTTG.Model.Model.Infrastructure.Track},GTTG.Core.Strategies.Implementations.MeasureableSegment})">
+            <summary>
+            Registers segments to <see cref="P:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.TrackSegments"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.MeasureOverride(SkiaSharp.SKSize)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Arranges <see cref="T:GTTG.Model.ViewModel.Infrastructure.Stations.StationView`1"/> and segments proportionally in <paramref name="finalSize"/> height.
+            If height returned from <see cref="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.MeasureOverride(SkiaSharp.SKSize)"/> is higher than <paramref name="finalSize"/>,
+            tracks and segments receives in <see cref="M:GTTG.Model.ViewModel.Infrastructure.Stations.StrategyStationView`1.ArrangeOverride(SkiaSharp.SKSize)"/> scaled desired height.
+            Otherwise remaining space is split equally between tracks.
+            </summary>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Tracks.ITrackViewFactory`1">
+            <summary>
+            Factory for creating visualizations of <see cref="T:GTTG.Model.Model.Infrastructure.Track"/> instances.
+            </summary>
+            <typeparam name="TTrackView">Visualization of tracks deriving from <see cref="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView"/>.</typeparam>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.ITrackViewFactory`1.CreateTrackView(GTTG.Model.Model.Infrastructure.Track)">
+            <summary>
+            Creates <typeparamref name="TTrackView"/> instance from <paramref name="track"/>
+            </summary>
+            <param name="track"><see cref="T:GTTG.Model.Model.Infrastructure.Track"/> to visualize.</param>
+            <returns>Instance of <typeparamref name="TTrackView"/> as visualization of <paramref name="track"/></returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView">
+            <summary>
+            Represents visualization of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.Track"/>.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.Track">
+            <summary>
+            Instance of track being visualized.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.LinePaint">
+            <summary>
+            Paint for <see cref="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.TrackPath"/>.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.TrackPath">
+            <summary>
+            Horizontal line representing track.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.TrackLineSegment">
+            <summary>
+            Segment to determine height (<see cref="P:SkiaSharp.SKPaint.StrokeWidth"/> of <see cref="P:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.TrackPath"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.#ctor(GTTG.Model.Model.Infrastructure.Track,GTTG.Model.Lines.LinePaint,GTTG.Core.Strategies.Implementations.MeasureableSegment)">
+            <summary>
+            Creates visualization of <paramref name="track"/>.
+            </summary>
+            <param name="track">Instance of track being visualized.</param>
+            <param name="linePaint">Paint to use when drawing <see cref="T:SkiaSharp.SKPath"/> representing horizontal line of track.</param>
+            <param name="trackLineSegment">Segment used to determine and position of horizontal line.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.MeasureOverride(SkiaSharp.SKSize)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.ArrangeOverride(SkiaSharp.SKSize)">
+            <summary>
+            Set height of horizontal line.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Infrastructure.Tracks.TrackView.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Traffic.ITrafficViewFactory`3">
+            <summary>
+            Factory for traffic view classes.
+            </summary>
+            <typeparam name="TTrafficView">Traffic view class deriving from <see cref="T:GTTG.Model.ViewModel.Traffic.TrafficView`2"/>.</typeparam>
+            <typeparam name="TTrainView">Train view class deriving from <see cref="T:GTTG.Model.ViewModel.Traffic.TrainView`1"/>.</typeparam>
+            <typeparam name="TTrain">Train class deriving from <see cref="T:GTTG.Model.Model.Traffic.Train"/>.</typeparam>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.ITrafficViewFactory`3.CreateTrafficView(GTTG.Model.Model.Traffic.Traffic{`2})">
+            <summary>
+            Creates specific implementation of traffic view from traffic instance.
+            </summary>
+            <param name="traffic"><see cref="T:GTTG.Model.Model.Traffic.Traffic`1"/> instance visualized by this view.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Traffic.ITrainViewFactory`2">
+            <summary>
+            Factory for train view classes.
+            </summary>
+            <typeparam name="TTrainView">Train view class deriving from <see cref="T:GTTG.Model.ViewModel.Traffic.TrainView`1"/>.</typeparam>
+            <typeparam name="TTrain">Train class deriving from <see cref="T:GTTG.Model.Model.Traffic.Train"/>.</typeparam>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.ITrainViewFactory`2.CreateTrainView(`1)">
+            <summary>
+            Creates specific implementation of train view from train instance.
+            </summary>
+            <param name="train"><see cref="T:GTTG.Model.Model.Traffic.Train"/> instance which is visualized by <typerefparam name="TTrainView"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2">
+            <summary>
+            Represents visualization of <see cref="T:GTTG.Model.Model.Traffic.Train"/> with strategies which positions added elements nearby train path. 
+            </summary>
+            <typeparam name="TStrategy">Concrete implementation of <see cref="T:GTTG.Model.Strategies.IStrategy"/> used by this instance.</typeparam>
+            <typeparam name="TTrain">Concrete implementation of <see cref="T:GTTG.Model.Model.Traffic.Train"/> used by this instance.</typeparam>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.Strategy">
+            <summary>
+            Instance of <typerefparam name="TStrategy"/> being used to add elements nearby train path.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.#ctor(`1,GTTG.Model.Lines.ITrainPath,`0)">
+            <summary>
+            Creates visualization of <see cref="T:GTTG.Model.Model.Traffic.Train"/> with provided <paramref name="strategy"/>.
+            </summary>
+            <param name="train">Instance of <see cref="T:GTTG.Model.Model.Traffic.Train"/> to be visualized.</param>
+            <param name="trainPath">Train path representing schedule of train.</param>
+            <param name="strategy">Implementation of <see cref="P:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.Strategy"/>.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.Arrange">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.DrawContainers(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <summary>
+            Draws <see cref="P:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.Strategy"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.UpdateTrainViewContent">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.StrategyTrainView`2.HasHit(SkiaSharp.SKPoint)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Traffic.TrafficView`2">
+            <summary>
+            Represents visualization of <see cref="T:GTTG.Model.Model.Traffic.Traffic`1"/>.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.Traffic">
+            <summary>
+            Instance of traffic being visualized.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews">
+            <summary>
+            Visualization of <typerefparam name="TTrain"/> trains in <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.Traffic"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.#ctor(GTTG.Model.Model.Traffic.Traffic{`1},GTTG.Model.ViewModel.Traffic.ITrainViewFactory{`0,`1})">
+            <summary>
+            Creates visualization of <paramref name="traffic"/>.
+            </summary>
+            <param name="traffic">Instance of traffic to be visualized.</param>
+            <param name="trainViewFactory">Interface with factory method to convert list of <typerefparam name="TTrain"/> instances in <paramref name="traffic"/> to <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews"/>.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.HasHit(SkiaSharp.SKPoint)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.Update">
+            <summary>
+            Calls <see cref="M:GTTG.Model.ViewModel.Traffic.TrainView`1.UpdateTrainViewContent"/> on all trains <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.Arrange">
+            <summary>
+            Calls <see cref="M:GTTG.Model.ViewModel.Traffic.TrainView`1.Arrange"/> on all trains <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews"/>.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.ProvideVisuals">
+            <inheritdoc/>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrafficView`2.SelectNearestTrainView(SkiaSharp.SKPoint)">
+            <summary>
+            Selects nearest train in <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews"/> with closest distance to provided point.
+            </summary>
+            <param name="canvasLocation">Position on <see cref="T:GTTG.Core.Drawing.Canvases.ContentDrawingCanvas"/> to which find the nearest train.</param>
+            <returns>Instance of nearest <typerefparam name="TTrainView"/> in <see cref="P:GTTG.Model.ViewModel.Traffic.TrafficView`2.TrainViews"/>.</returns>
+        </member>
+        <member name="T:GTTG.Model.ViewModel.Traffic.TrainView`1">
+            <summary>
+            Represents visualization of train.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Traffic.TrainView`1.Train">
+            <summary>
+            Instance of train being visualized.
+            </summary>
+        </member>
+        <member name="P:GTTG.Model.ViewModel.Traffic.TrainView`1.TrainPath">
+            <summary>
+            Line representing schedule of train. 
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrainView`1.#ctor(`0,GTTG.Model.Lines.ITrainPath)">
+            <summary>
+            Creates visualization of train.
+            </summary>
+            <param name="train">Instance of train to visualize.</param>
+            <param name="trainPath">Train path representing schedule of train.</param>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrainView`1.Arrange">
+            <summary>
+            Arranges content of train on canvas to reflect changes in arrangement of other view models.
+            Re-arranges train path as line of points in railway.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrainView`1.DistanceFromPoint(SkiaSharp.SKPoint)">
+            <summary>
+            Determines closest distance from point to train path.
+            </summary>
+            <param name="point">Point to which find the distance.</param>
+            <returns>Closest distance to <paramref name="point"/>.</returns>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrainView`1.UpdateTrainViewContent">
+            <summary>
+            Updates content of train visualization to match new schedule of train.
+            Re-validates point in train path as schedule creating train path can be changed.
+            </summary>
+        </member>
+        <member name="M:GTTG.Model.ViewModel.Traffic.TrainView`1.OnDraw(GTTG.Core.Drawing.Canvases.DrawingCanvas)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

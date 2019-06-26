@@ -1,0 +1,13 @@
+﻿<Window x:Class="SZDC.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:designer="clr-namespace:SZDC.Wpf.Designer"
+        xmlns:dashboard="clr-namespace:SZDC.WPF.Dashboard"
+        mc:Ignorable="d"
+        Width="1324" Height="724"
+        d:DataContext="{d:DesignInstance designer:DesignerHelper, IsDesignTimeCreatable=True}"
+        Title="SZDC train timetables, powered by GTTG">
+        <dashboard:DashboardControl/>
+</Window>

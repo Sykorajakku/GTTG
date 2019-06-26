@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="145mm"
+   height="25mm"
+   viewBox="0 0 145 25"
+   version="1.1"
+   id="svg901"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="kap4_gttg-core-component_structure_diagram.svg">
+  <defs
+     id="defs895" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="440.69071"
+     inkscape:cy="88.919545"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     width="209mm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata898">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-272)">
+    <path
+       style="fill:#d4ff2a;fill-opacity:0.45098039;stroke:#88aa00;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 83.227801,277.17011 c 0,0 -0.219171,-2.6661 3.946674,-2.68344 4.165843,-0.0174 42.647585,0 42.647585,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.94954,2.72774 -3.94954,2.72774 l -42.650423,-0.002 c 0,0 -3.960902,0.21174 -3.949526,-2.72773 z"
+       id="path895-7-2-6-4"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="94.65921"
+       y="278.40189"
+       id="text6687-7-5-4-8-0"><tspan
+         sodipodi:role="line"
+         id="tspan1003"
+         x="94.65921"
+         y="278.40189">IViewProvider</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.798689,277.1928 c 0,0 -0.219171,-2.6661 3.946674,-2.68344 4.165843,-0.0174 42.647591,0 42.647591,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.949539,2.72774 -3.949539,2.72774 l -42.65043,-0.002 c 0,0 -3.960902,0.21174 -3.949526,-2.72773 z"
+       id="path895-7-2-6-4-3-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.850938,292.21514 c 0,0 -0.21917,-2.6661 3.946674,-2.68344 4.165843,-0.0174 42.647595,0 42.647595,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.94954,2.72774 -3.94954,2.72774 l -42.650433,-0.002 c 0,0 -3.960901,0.21174 -3.949526,-2.72773 z"
+       id="path895-7-2-6-4-3-8-2"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="16.988586"
+       y="278.31122"
+       id="text6687-7-5-4-8-0-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan1003-39"
+         x="16.988586"
+         y="278.31122">GraphicalComponent</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="23.143381"
+       y="293.19632"
+       id="text6687-7-5-4-8-0-6-3"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan1003-39-5"
+         x="23.143381"
+         y="293.19632">ViewModifier</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5874999, 1.5874999;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 61.539247,277.22712 21.237537,-0.0236"
+       id="path932"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5874999, 1.5874999;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 35.05732,289.20426 -0.0473,-9.07142"
+       id="path957"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.106913,288.1627 0.950408,1.04156 0.857836,-1.08124"
+       id="path959"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="opacity:1;fill:#4169e1;fill-opacity:0.45098039;fill-rule:evenodd;stroke:none;stroke-width:0.08499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.51, 0.51;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5294"
+       width="8.9535294"
+       height="4.6772165"
+       x="67.886963"
+       y="283.3808" />
+    <rect
+       style="opacity:1;fill:#d4ff2a;fill-opacity:0.45098039;fill-rule:evenodd;stroke:none;stroke-width:0.08499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.51000001, 0.51000001;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5294-6"
+       width="8.9535294"
+       height="4.6772165"
+       x="67.850327"
+       y="289.90094" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="77.967705"
+       y="287.93976"
+       id="text4973-7"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5314"
+         x="77.967705"
+         y="287.93976">Třída</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="78.160858"
+       y="294.46246"
+       id="text4973-7-0"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5314-0"
+         x="78.160858"
+         y="294.46246">Rozhraní</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.45514244px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.596655,277.20352 -1.1863,-0.68776 -0.007,1.45644 z"
+       id="path5125-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.58749992, 1.58749992;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 104.5447,288.59216 -6.779953,-0.0237"
+       id="path932-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.45514244px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.764747,288.56846 1.1863,0.68776 0.007,-1.45644 z"
+       id="path5125-3-4"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="106.00983"
+       y="289.46707"
+       id="text5182-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan5180-4-6"
+         x="106.00983"
+         y="289.46707"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">implementace rozhraní</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.58749992, 1.58749992;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 97.578996,292.859 6.850814,-0.0119"
+       id="path957-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 98.620556,291.9086 -1.04156,0.9504 1.08124,0.85784"
+       id="path959-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="105.97218"
+       y="293.46649"
+       id="text5182-7-9-1"><tspan
+         sodipodi:role="line"
+         id="tspan5180-4-6-7"
+         x="105.97218"
+         y="293.46649"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">závislost mezi třídami</tspan></text>
+  </g>
+</svg>

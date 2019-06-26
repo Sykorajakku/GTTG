@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="SZDC.Wpf.TrainGraph.TrainGraphHeader"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:modifiers="clr-namespace:SZDC.Wpf.Modifiers"
+             xmlns:designer="clr-namespace:SZDC.Wpf.Designer"
+             xmlns:converters="clr-namespace:SZDC.Wpf.Converters"
+             xmlns:trainGraph="clr-namespace:SZDC.WPF.TrainGraph"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance designer:TrainTimetableDesignHelper, IsDesignTimeCreatable=True}"
+             d:DesignHeight="65.5" d:DesignWidth="1337.5">
+
+    <UserControl.Resources>
+
+        <converters:TimeIntervalConverter x:Key="StaticTimetableTimeIntervalConverter"/>
+        <converters:TrainSelectionToolConverter x:Key="TrainSelectionToolConverter"/>
+        <converters:HitTestComponentConverter x:Key="HitTestComponentConverter"/>
+        <converters:ScaleToIsScaledConverter x:Key="IsScaledConverter"/>
+
+        <Style x:Key="InfoField" TargetType="TextBlock">
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Key="TimeInterval" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Select time:" Style="{StaticResource InfoField}"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Select train:" Style="{StaticResource InfoField}"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Text="Selected train schedule:" Style="{StaticResource InfoField}"/>
+        <TextBlock Grid.Row="1" Grid.Column="5" Text="Visible interval:" Style="{StaticResource InfoField}"/>
+        <TextBlock Grid.Row="3" Grid.Column="5" Text="Viewable interval:" Style="{StaticResource InfoField}"/>
+
+        <!-- Remarks on XAML warnings with DataContext and MultiBinding : we created own data context for this UI control -->
+        <trainGraph:TrainSelectionControl Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+                                     d:DataContext="{d:DesignInstance designer:TrainSelectionDesigner, IsDesignTimeCreatable=True}"
+                                     DataContext="{converters:MultiBinding {Binding Path=Tools.TrainSelectionTool},
+                                                                           {Binding Path=ViewModel},
+                                                                           Converter={StaticResource TrainSelectionToolConverter}}" Height="30" VerticalAlignment="Top"/>
+
+        <modifiers:ViewTimeModifier Grid.Column="1" Grid.Row="1"
+                                    IsEnabled="{Binding Path=ViewProvider.Scale, Mode=OneWay, Converter={StaticResource IsScaledConverter}}"
+                                    ItemsSource="{Binding Path=Tools.ViewTimeModifierTool.TimeIntervals}"
+                                    SelectedItem="{Binding Path=Tools.ViewTimeModifierTool.SelectedTimeInterval, Mode=TwoWay}"/>
+        
+        <modifiers:TrainModifier Visibility="Hidden" Grid.Column="3" Grid.Row="1"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="6" 
+                   Style="{StaticResource TimeInterval}" 
+                   Text="{Binding Path=ViewProvider.DateTimeContext.ViewDateTimeInterval,
+                                  Converter={StaticResource StaticTimetableTimeIntervalConverter}}"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="6" 
+                   Style="{StaticResource TimeInterval}" 
+                   Text="{Binding Path=ViewProvider.DateTimeContext.ContentDateTimeInterval,
+                                  Converter={StaticResource StaticTimetableTimeIntervalConverter}}"/>
+        
+        <modifiers:TimeComponentControl Grid.Row="1" Grid.RowSpan="3"
+                                        Grid.Column="7"
+                                        DataContext="{Binding Path=Tools.ComponentHitTestTool.HitTestedTimeComponent, Converter={StaticResource HitTestComponentConverter}}"
+                                        d:DataContext="{d:DesignInstance designer:TimeComponentDesigner, IsDesignTimeCreatable=True}"/>
+    </Grid>
+</UserControl>

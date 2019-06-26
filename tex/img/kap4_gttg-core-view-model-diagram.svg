@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="145mm"
+   height="35mm"
+   viewBox="0 0 144.99999 35.000001"
+   version="1.1"
+   id="svg821"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="kap4_gttg-core-view-model-diagram.svg">
+  <defs
+     id="defs815" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="496.01228"
+     inkscape:cy="-2.2213398"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     width="145mm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata818">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-261.99998)">
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.047752,265.9689 c 0,0 -0.219171,-2.6661 3.946674,-2.68344 4.165843,-0.0174 42.647591,0 42.647591,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.949539,2.72774 -3.949539,2.72774 l -42.650431,-0.002 c 0,0 -3.960901,0.21174 -3.949525,-2.72773 z"
+       id="path895-7-2-6-4-3-8"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="25.766344"
+       y="266.8945"
+       id="text6687-7-5-4-8-0-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4742"
+         x="25.766344"
+         y="266.8945">RailwayView</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.307093,279.20258 c 0,0 -0.219171,-2.6661 3.946674,-2.68344 4.165843,-0.0174 42.647591,0 42.647591,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.949539,2.72774 -3.949539,2.72774 l -42.650431,-0.002 c 0,0 -3.960901,0.21174 -3.949525,-2.72773 z"
+       id="path895-7-2-6-4-3-8-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="25.732777"
+       y="280.36017"
+       id="text6687-7-5-4-8-0-6-3"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4742-7"
+         x="25.732777"
+         y="280.36017">StationView</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.306856,292.39785 c 0,0 -0.219172,-2.6661 3.946673,-2.68344 4.165844,-0.0174 42.647591,0 42.647591,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.949539,2.72774 -3.949539,2.72774 l -42.65043,-0.002 c 0,0 -3.960902,0.21174 -3.949525,-2.72773 z"
+       id="path895-7-2-6-4-3-8-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="27.911341"
+       y="293.47916"
+       id="text6687-7-5-4-8-0-6-1"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4742-70"
+         x="27.911341"
+         y="293.47916">TrackView</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 81.205668,265.8659 c 0,0 -0.219171,-2.6661 3.946674,-2.68344 4.165844,-0.0174 42.647588,0 42.647588,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.94954,2.72774 -3.94954,2.72774 l -42.650426,-0.002 c 0,0 -3.960902,0.21174 -3.949526,-2.72773 z"
+       id="path895-7-2-6-4-3-8-9"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="86.207916"
+       y="266.81491"
+       id="text6687-7-5-4-8-0-6-37"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4742-9"
+         x="86.207916"
+         y="266.81491">StrategyRailwayView</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39899999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 81.217317,279.05335 c 0,0 -0.219172,-2.6661 3.946673,-2.68344 4.165845,-0.0174 42.64759,0 42.64759,0 0,0 3.89333,-0.31593 3.95523,2.68554 0.0619,3.00148 -3.94954,2.72774 -3.94954,2.72774 l -42.650428,-0.002 c 0,0 -3.960902,0.21174 -3.949525,-2.72773 z"
+       id="path895-7-2-6-4-3-8-9-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 106.47266,269.01628 -0.004,7.1489"
+       id="path1013-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30502835px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 106.47468,269.07522 -0.72707,1.21205 0.73844,1.04465 0.71571,-1.17522 z"
+       id="path1041"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 37.579633,282.36439 -0.004,7.1489"
+       id="path1013-6-4-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30502835px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 37.581653,282.42333 -0.72707,1.21205 0.73844,1.04465 0.71571,-1.17522 z"
+       id="path1041-3-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 37.563096,269.16829 -0.004,7.1489"
+       id="path1013-6-4-9-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30502835px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 37.565116,269.22723 -0.72707,1.21205 0.73844,1.04465 0.715711,-1.17522 z"
+       id="path1041-3-8-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="86.187737"
+       y="279.94901"
+       id="text6687-7-5-4-8-0-6-37-9"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4742-9-7"
+         x="86.187737"
+         y="279.94901">StrategyStationView</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.078435,265.9807 17.934205,0.003"
+       id="path1150"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.048701,265.97571 1.69517,-1.04302 v 2.05213 z"
+       id="path1152"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.283112,279.05035 17.744193,0.006"
+       id="path1150-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.253378,279.04536 1.69517,-1.04302 v 2.05213 z"
+       id="path1152-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 107.92078,291.0982 7.1489,0.004"
+       id="path1013-6-4-9-9-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30502835px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105.66408,291.10957 1.21205,0.72707 1.04465,-0.73844 -1.17523,-0.71572 z"
+       id="path1041-3-8-2-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="116.12769"
+       y="292.01724"
+       id="text5182-7"><tspan
+         sodipodi:role="line"
+         id="tspan5180-4"
+         x="116.12769"
+         y="292.01724"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">agregace</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5875, 1.5875;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 87.46121,291.03333 -7.772143,-0.0402"
+       id="path932-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.189751"
+       y="292.02435"
+       id="text5182-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan5180-4-6"
+         x="88.189751"
+         y="292.02435"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">dědičnost</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 77.900353,290.97793 1.69517,-1.04302 v 2.05213 z"
+       id="path1152-1-4"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

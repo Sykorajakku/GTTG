@@ -1,0 +1,69 @@
+{
+    "railways" :
+    
+    {
+    "301" : {
+        
+        "railwaySegments"  : [
+            [
+                { "stationName" : "Čadca", "kilometersValue" : 279.8, "kilometersString" : "279.8" },
+                { "stationName" : "Svrčinovec zast. z", "kilometersValue" : 284.1, "kilometersString" : "284.1" },
+                { "stationName" : "Mosty u Jabl.zast. z", "kilometersValue" : 288.5, "kilometersString" : "288.5" },
+                { "stationName" : "Mosty u Jablunkova", "kilometersValue" : 290.2, "kilometersString" : "290.2" },
+                { "stationName" : "Bocanovice z", "kilometersValue" : 295.5, "kilometersString" : "295.5" },
+                { "stationName" : "Návsí", "kilometersValue" : 299.0, "kilometersString" : "299.0" },
+                { "stationName" : "Hrádek z", "kilometersValue" : 301.9, "kilometersString" : "301.9" },
+                { "stationName" : "Bystřice", "kilometersValue" : 304.9, "kilometersString" : "304.9" },
+                { "stationName" : "Vendryně z", "kilometersValue" : 307.6, "kilometersString" : "307.6" },
+                { "stationName" : "Třinec centrum z", "kilometersValue" : 309.5, "kilometersString" : "309.5" },
+                { "stationName" : "Třinec", "kilometersValue" : 311.9, "kilometersString" : "311.9" },
+                { "stationName" : "Třinec-Konská z", "kilometersValue" : 314.0, "kilometersString" : "314.0" },
+                { "stationName" : "Třinec-Konská", "kilometersValue" : 314.3, "kilometersString" : "314.3" },
+                { "stationName" : "Ropice zastávka z", "kilometersValue" : 316.1, "kilometersString" : "316.1" },
+                { "stationName" : "Český Těšín nákl.n", "kilometersValue" : 318.5, "kilometersString" : "318.5" },
+                { "stationName" : "Český Těšín", "kilometersValue" : 319.3, "kilometersString" : "319.3" },
+                { "stationName" : "Odb Chotěbuz", "kilometersValue" : 323.6, "kilometersString" : "323.6" },
+                { "stationName" : "Chotěbuz", "kilometersValue" : 323.9, "kilometersString" : "323.9" },
+                { "stationName" : "Louky nad Olší", "kilometersValue" : 325.6, "kilometersString" : "325.6" },
+                { "stationName" : "Karviná hl.n", "kilometersValue" : 333.8, "kilometersString" : "333.8" },
+                { "stationName" : "Odb Koukolná", "kilometersValue" : 337.8, "kilometersString" : "337.8" },
+                { "stationName" : "Dětmarovice", "kilometersValue" :340.4 , "kilometersString" : "340.4" }
+            ],
+            [   
+                { "stationName" : "Odb Koukolná", "kilometersValue" : -0.1, "kilometersString" : "-0.1" },
+                { "stationName" : "Odb Závada", "kilometersValue" : 1.2, "kilometersString" : "1.2" },
+            ],
+            [   
+                { "stationName" : "Český Těšín", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Odb Chotěbuz", "kilometersValue" : 4.3, "kilometersString" : "4.3" },
+                { "stationName" : "Chotěbuz z", "kilometersValue" : 4.6, "kilometersString" : "4.6" },
+                { "stationName" : "Albrechtice u Č.T", "kilometersValue" : 10.7, "kilometersString" : "10.7" },
+                { "stationName" : "Horní Suchá z", "kilometersValue" : 13.3, "kilometersString" : "13.3" },
+                { "stationName" : "Havířov-Suchá z", "kilometersValue" : 15.3, "kilometersString" : "15.3" },
+                { "stationName" : "Havířov střed z", "kilometersValue" : 17.0, "kilometersString" : "17.0" },
+                { "stationName" : "Havířov", "kilometersValue" : 19.1, "kilometersString" : "19.1" },
+                { "stationName" : "Šenov z", "kilometersValue" : 22.6, "kilometersString" : "22.6" },
+                { "stationName" : "Ostrava-Bartovice", "kilometersValue" : 25.0, "kilometersString" : "25.0" },
+                { "stationName" : "Ostrava-Kunčice", "kilometersValue" : 29.3, "kilometersString" : "29.3=30.5" },
+                { "stationName" : "Ostrava-Vítkovice", "kilometersValue" : 34.0, "kilometersString" : "34.0" },
+                { "stationName" : "Odb Odra", "kilometersValue" : 36.4, "kilometersString" : "36.4" },
+                { "stationName" : "Ostrava-Svinov", "kilometersValue" : 41.3, "kilometersString" : "41.3" }
+            ],
+            [
+                { "stationName" : "Odb Odra", "kilometersValue" : 37.3, "kilometersString" : "37.3" },
+                { "stationName" : "Výh Polanka n.Odrou", "kilometersValue" : 39.8, "kilometersString" : "39.8" }
+            ],
+            [  
+                { "stationName" : "Ostrava hl.n", "kilometersValue" : 266.5, "kilometersString" : "266.5" },
+                { "stationName" : "Ostrava uhelné n", "kilometersValue" : 267.1, "kilometersString" : "267.1=0.1" },
+                { "stationName" : "Ostrava báňské n.VOK", "kilometersValue" : 268.7, "kilometersString" : "268.7" },
+                { "stationName" : "Ostrava-Stodolní z", "kilometersValue" : 270.9, "kilometersString" : "270.9" },
+                { "stationName" : "Ostrava střed", "kilometersValue" : 273.9, "kilometersString" : "273.9" },
+                { "stationName" : "Ostrava-Kunčičky z", "kilometersValue" : 279.5, "kilometersString" : "279.5" },
+                { "stationName" : "Ostrava-Kunčice", "kilometersValue" : 287.3, "kilometersString" : "287.3" }
+            ]
+        ]
+    }
+}
+
+}

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Jakub Sýkora</Authors>
+    <Product>GTTG</Product>
+    <Description>GTTG.Model is core part of library GTTG for train graphs visualization. Includes data model and view model to describe generic visual content of train graphs.</Description>
+    <PackageProjectUrl>https://github.com/Sykoj/GTTG</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Sykoj/GTTG</RepositoryUrl>
+    <PackageTags>train-graph GTTG train-timetables</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.0.4</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GTTG.Core\GTTG.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

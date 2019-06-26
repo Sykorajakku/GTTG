@@ -1,0 +1,62 @@
+﻿<Window x:Class="SZDC.Wpf.TrainGraph.DynamicTrainGraphWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:SZDC.Wpf"
+        xmlns:trainGraph="clr-namespace:SZDC.Wpf.TrainGraph"
+        xmlns:modifiers="clr-namespace:SZDC.Wpf.Modifiers"
+        xmlns:designer="clr-namespace:SZDC.Wpf.Designer"
+        xmlns:converters="clr-namespace:SZDC.Wpf.Converters"
+        xmlns:trainGraph1="clr-namespace:SZDC.WPF.TrainGraph"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance designer:TrainTimetableDesignHelper, IsDesignTimeCreatable=True}"
+        Width="1344" Height="864">
+
+    <Window.Title>
+        <MultiBinding StringFormat="{}{0} railway {1}, {2} - {3}">
+            <Binding Path="TimetableInfo.TimetableType"/>
+            <Binding Path="TimetableInfo.RailwayNumber"/>
+            <Binding Path="TimetableInfo.FirstStationName"/>
+            <Binding Path="TimetableInfo.LastStationName"/>
+        </MultiBinding>
+    </Window.Title>
+
+    <Window.Resources>
+        <converters:HasSelectedTrainConverter x:Key="HasSelectedTrainConverter"/>
+        
+        <Style x:Key="IsModified" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Value="True" Binding="{Binding Path=Tools.TrainModificationTool.IsModifying}">
+                    <Setter Property="Content" Value="Stop"/>
+                </DataTrigger>
+
+                <DataTrigger Value="False" Binding="{Binding Path=Tools.TrainModificationTool.IsModifying}">
+                    <Setter Property="Content" Value="Start"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Modify train:" VerticalAlignment="Center" Background="AliceBlue"/>
+        <modifiers:TrainModifier Grid.Row="1" Grid.Column="0"
+                                 IsEnabled="{Binding Path=Tools.TrainSelectionTool.SelectedTrainView, Converter={StaticResource HasSelectedTrainConverter}}"
+                                 Style="{StaticResource IsModified}"/>
+        <trainGraph:TrainGraphHeader Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"/>
+        <trainGraph1:TrainGraphControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <!--TextBlock Grid.Row="2"/-->
+    </Grid>
+</Window>

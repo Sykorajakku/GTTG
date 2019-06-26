@@ -1,0 +1,139 @@
+﻿<UserControl x:Class="SZDC.WPF.Dashboard.DashboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:designer="clr-namespace:SZDC.Wpf.Designer"
+             xmlns:converters="clr-namespace:SZDC.Wpf.Converters"
+             xmlns:modelProviders="clr-namespace:SZDC.Editor.ModelProviders;assembly=SZDC.Editor"
+             xmlns:dashboard="clr-namespace:SZDC.WPF.Dashboard"
+             xmlns:interfaces="clr-namespace:SZDC.Editor.Interfaces;assembly=SZDC.Editor"
+             d:DataContext="{d:DesignInstance designer:DesignerHelper, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+
+        <converters:IsSelectedConverter x:Key="IsSelectedConverter"/>
+        <converters:RailwaySegmentConverter x:Key="RailwaySegmentConverter"/>
+        <converters:OpenCommandConverter x:Key="OpenCommandConverter"/>
+
+        <Style x:Key="TitleTextBlockStyleKey" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="DefaultTextBlockStyleKey" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <ContentControl x:Key="SelectedTimetableTextBlock">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" Style="{StaticResource DefaultTextBlockStyleKey}" Text="{Binding InfrastructureSelector.SelectedRailway, StringFormat=Open: {0}}"/>
+                <TextBlock Grid.Row="1" Style="{StaticResource DefaultTextBlockStyleKey}" Text="{Binding InfrastructureSelector.SelectedRailwaySection, Converter={StaticResource RailwaySegmentConverter}}"/>
+            </Grid>
+        </ContentControl>
+
+        <Style x:Key="SelectableContentStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+
+                <DataTrigger Value="True">
+                    <DataTrigger.Binding>
+                        <MultiBinding Converter="{StaticResource IsSelectedConverter}">
+                            <Binding Path="InfrastructureSelector.SelectedRailway"/>
+                            <Binding Path="InfrastructureSelector.SelectedRailwaySection"/>
+                        </MultiBinding>
+                    </DataTrigger.Binding>
+                    <Setter Property="Content" Value="{StaticResource SelectedTimetableTextBlock}"/>
+                    <Setter Property="IsEnabled" Value="True"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                </DataTrigger>
+
+                <DataTrigger Value="False">
+                    <DataTrigger.Binding>
+                        <MultiBinding Converter="{StaticResource IsSelectedConverter}">
+                            <Binding Path="InfrastructureSelector.SelectedRailway"/>
+                            <Binding Path="InfrastructureSelector.SelectedRailwaySection"/>
+                        </MultiBinding>
+                    </DataTrigger.Binding>
+                    <Setter Property="Content" Value="Select railway, railway segment."/>
+                    <Setter Property="IsEnabled" Value="False"/>
+                </DataTrigger>
+
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid MaxWidth="800" MaxHeight="600" Margin="0,5,0,0" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="SZDC railways train traffic graph" Style="{StaticResource TitleTextBlockStyleKey}" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <TextBlock Name="TimeSelector" Text="Select timetable information" Grid.Column="1" Grid.Row="5" Style="{StaticResource DefaultTextBlockStyleKey}"/>
+
+        <dashboard:TimetableTypeControl Grid.Column="1" Grid.Row="6" Grid.RowSpan="2"/>
+
+        <Button Grid.Column="1" Grid.Row="3" 
+                Style="{StaticResource SelectableContentStyle}" 
+                Name="OpenButton"
+                Command="{Binding Path=TimeSelector.TimetableType, Converter={StaticResource OpenCommandConverter}}"
+                MaxWidth="{Binding ElementName=TimeSelector, Path=ActualWidth}"/>
+
+        <TextBlock Grid.Column="3" Grid.Row="2" Text="Railways" Style="{StaticResource DefaultTextBlockStyleKey}"/>
+        <ListBox x:Name="AvailableRailways" Grid.Column="3" Grid.Row="3" Grid.RowSpan="6"
+                 ItemsSource="{Binding Path=InfrastructureSelector.AvailableRailways}"
+                 SelectedItem="{Binding Path=InfrastructureSelector.SelectedRailway, Mode=TwoWay}">
+        </ListBox>
+
+        <TextBlock Grid.Column="5" Grid.Row="2" Text="Segments of selected railway" Style="{StaticResource DefaultTextBlockStyleKey}"/>
+        <ListBox x:Name="AvailableRailwaySections" Grid.Column="5" Grid.Row="3" Grid.RowSpan="2"
+                 ItemsSource="{Binding Path=InfrastructureSelector.AvailableRailwaySegments}"
+                 SelectedItem="{Binding Path=InfrastructureSelector.SelectedRailwaySection, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type interfaces:RailwaySegmentBriefDescription}">
+                    <TextBlock Text="{Binding ., Converter={StaticResource RailwaySegmentConverter}}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBlock Grid.Column="5" Grid.Row="5" Text="Stations in selected segment" Style="{StaticResource DefaultTextBlockStyleKey}"/>
+        <ListBox x:Name="SelectedRailwaySectionStationsList" Grid.Row="6" Grid.Column="5" Grid.RowSpan="3"
+                 ItemsSource="{Binding Path=InfrastructureSelector.SelectedRailwaySection.StationsInSegment}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="Focusable" Value="False"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+            
+        </Grid>
+</UserControl>

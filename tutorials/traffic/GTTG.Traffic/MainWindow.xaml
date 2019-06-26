@@ -1,0 +1,13 @@
+﻿<Window x:Class="GTTG.Traffic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:traffic="clr-namespace:GTTG.Traffic"
+        mc:Ignorable="d"
+        Title="GTTG traffic demo" Height="450" Width="800">
+    
+    <Grid>
+        <traffic:GraphicalComponentUserControl/>
+    </Grid>
+</Window>

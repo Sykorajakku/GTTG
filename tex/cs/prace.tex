@@ -1,0 +1,190 @@
+%%% Hlavní soubor. Zde se definují základní parametry a odkazuje se na ostatní části. %%%
+      		
+%% Verze pro jednostranný tisk:
+% Okraje: levý 40mm, pravý 25mm, horní a dolní 25mm
+% (ale pozor, LaTeX si sám přidává 1in)
+\documentclass[12pt,a4paper,rgb]{report}
+\setlength\textwidth{145mm}
+\setlength\textheight{247mm}
+\setlength\oddsidemargin{15mm}
+\setlength\evensidemargin{15mm}
+\setlength\topmargin{0mm}
+\setlength\headsep{0mm}
+\setlength\headheight{0mm}
+\let\openright=\clearpage
+
+%% Pokud tiskneme oboustranně:
+%\documentclass[12pt,a4paper,twoside,openright]{report}
+%\setlength\textwidth{145mm}
+%\setlength\textheight{247mm}
+%\setlength\oddsidemargin{14.2mm}
+%\setlength\evensidemargin{0mm}  
+%\setlength\topmargin{0mm}
+%\setlength\headsep{0mm}
+%\setlength\headheight{0mm}
+%\let\openright=\cleardoublepage
+
+%% Vytváříme PDF/A-2u
+\usepackage[a-2u]{pdfx}
+
+%% Přepneme na českou sazbu a fonty Latin Modern
+\usepackage[czech]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+%% Použité kódování znaků: obvykle latin2, cp1250 nebo utf8:
+\usepackage[utf8]{inputenc}
+
+%%% Další užitečné balíčky (jsou součástí běžných distribucí LaTeXu)
+\usepackage{amsmath}        % rozšíření pro sazbu matematiky
+\usepackage{amsfonts}       % matematické fonty00
+\usepackage{amsthm}         % sazba vět, definic apod.
+\usepackage{bbding}         % balíček s nejrůznějšími symboly
+			    			% (čtverečky, hvězdičky, tužtičky, nůžtičky, ...)
+\usepackage{bm}             % tučné symboly (příkaz \bm)
+\usepackage{graphicx}       % vkládání obrázků
+\usepackage{fancyvrb}       % vylepšené prostředí pro strojové písmo
+\usepackage{indentfirst}    % zavede odsazení 1. odstavce kapitoly
+\usepackage{natbib}         % zajištuje možnost odkazovat na literaturu
+			    			% stylem AUTOR (ROK), resp. AUTOR [ČÍSLO]
+\usepackage[nottoc]{tocbibind} % zajistí přidání seznamu literatury,
+                            % obrázků a tabulek do obsahu
+\usepackage{icomma}         % inteligetní čárka v matematickém módu
+\usepackage{dcolumn}        % lepší zarovnání sloupců v tabulkách
+\usepackage{booktabs}       % lepší vodorovné linky v tabulkách
+\usepackage{paralist}       % lepší enumerate a itemize
+\usepackage{xcolor}  		% barevná sazba
+\usepackage{graphicx}		% umisti obrazky vedle sebe
+\usepackage{subcaption}		% umisti obrazky vedle sebe
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[cache=false]{minted}			% syntax highlight
+\usepackage{algpseudocode}  
+\usepackage{algorithm}
+\usepackage{multicol}
+
+\definecolor{reqcolor}{HTML}{4169E1} 		% "royal blue" barva pro vyznačení tagů požadavků
+\definecolor{goalcolor}{HTML}{800080}		% "purple" barva pro vyznačení očíslovaných cílů
+
+%%% Údaje o práci
+
+% Název práce v jazyce práce (přesně podle zadání)
+\def\NazevPrace{GTTG – aplikace pro práci s~grafikonem vlakové dopravy}
+
+% Název práce v angličtině
+\def\NazevPraceEN{GTTG – application for manipulation with train timetable diagrams}
+
+% Jméno autora
+\def\AutorPrace{Jakub Sýkora}
+
+% Rok odevzdání
+\def\RokOdevzdani{2019}
+
+% Název katedry nebo ústavu, kde byla práce oficiálně zadána
+% (dle Organizační struktury MFF UK, případně plný název pracoviště mimo MFF)
+\def\Katedra{Katedra distribuovaných a~spolehlivých systémů}
+\def\KatedraEN{Department of Distributed and Dependable Systems}
+
+% Jedná se o katedru (department) nebo o ústav (institute)?
+\def\TypPracoviste{Katedra}
+\def\TypPracovisteEN{Department}
+
+% Vedoucí práce: Jméno a příjmení s~tituly
+\def\Vedouci{Mgr. Pavel Ježek, Ph.D.}
+
+% Pracoviště vedoucího (opět dle Organizační struktury MFF)
+\def\KatedraVedouciho{Katedra distribuovaných a~spolehlivých systémů}
+\def\KatedraVedoucihoEN{Department of Distributed and Dependable Systems}
+
+% Studijní program a obor
+\def\StudijniProgram{Informatika}
+\def\StudijniObor{Softwarové a~datové inženýrství}
+
+% Nepovinné poděkování (vedoucímu práce, konzultantovi, tomu, kdo
+% zapůjčil software, literaturu apod.)
+\def\Podekovani{%
+Chtěl bych poděkovat vedoucímu Mgr. Pavlu Ježkovi, Ph.D. za jeho čas, rady a~pomoc při vypracování této práce. Zároveň bych chtěl poděkovat i~mé rodině a~všem, kteří mě při studiu podpořili nebo nějak pomohli.
+}
+
+% Abstrakt (doporučený rozsah cca 80-200 slov; nejedná se o zadání práce)
+\def\Abstrakt{ % , určených i pro modelová kolejiště nebo vlakové simulátory,
+Součástí aplikací pracujících s grafikonem vlakové dopravy je obvykle vizualizace provozu na železniční trati, takzvaný nákresný jízdní řád. Cílem práce je vytvořit knihovnu ulehčující vývojářům tvorbu takovýchto aplikací poskytnutím grafické komponenty, která vykresluje jejich vlastní vizualizaci nákresného jízdního řádu.
+
+Komponenta, určená pro aplikace na platformě .NET, využívá ke kreslení 2D grafickou knihovnu SkiaSharp a je integrovatelná do více frameworků uživatelských rozhraní. Knihovna umožňuje interaktivně pracovat s vykreslovaným nákresným jízdním řádem, například přibližováním zobrazovaného obsahu nebo klikáním na vykreslované prvky pomocí myši. Aby se dále ulehčilo vytváření aplikací, knihovna nabízí lehce rozšiřitelnou základní vizualizaci nákresného jízdního řádu.
+
+Jako referenční příklad využití knihovny jsme vytvořili v GUI frameworku WPF aplikaci pro prohlížení nákresných jízdních řádů organizace Správy železniční dopravní cesty  spravující provoz na železničních tratích České republiky.
+}
+\def\AbstraktEN{
+Applications for organization of rail transport often contain visualization of traffic situations, referred to as train timetable diagrams. The goal of this thesis is to create a library that simplifies the development of such applications by providing graphical component which allows developers to implement their own custom train timetable diagrams.
+
+The component, developed for .NET platform, utilizes 2D graphics library \linebreak SkiaSharp for drawing and can be integrated into various GUI frameworks. The library features interactive rendered content of train timetable diagrams -- for example, zooming in on specific areas of the content or clicking on visualized elements. The library also offers an easily extendable implementation of the basic train timetable diagram.
+
+As an example of our library utilization, we also developed a WPF application intended for viewing train timetable diagrams of Czech railways.
+}
+
+% 3 až 5 klíčových slov (doporučeno), každé uzavřeno ve složených závorkách
+\def\KlicovaSlova{%
+{Nákresné jízdní řády} {Grafikon vlakové dopravy} {SkiaSharp} {.NET} {Knihovna}
+}
+\def\KlicovaSlovaEN{%
+{Train timetable diagrams} {Train graph} {SkiaSharp} {.NET} {Library}
+}
+
+%% Balíček hyperref, kterým jdou vyrábět klikací odkazy v PDF,
+%% ale hlavně ho používáme k uložení metadat do PDF (včetně obsahu).
+%% Většinu nastavítek přednastaví balíček pdfx.
+\hypersetup{unicode}
+\hypersetup{breaklinks=true}
+
+%% Definice různých užitečných maker (viz popis uvnitř souboru)
+\include{makra}
+
+%% Titulní strana a různé povinné informační strany
+\begin{document}
+\include{titulka}
+
+%%% Strana s automaticky generovaným obsahem bakalářské práce
+
+\tableofcontents
+
+%%% Jednotlivé kapitoly práce jsou pro přehlednost uloženy v samostatných souborech
+\include{kap01}
+\include{kap02}
+\include{kap03}
+\include{kap04}                        
+\include{kap05}
+\include{kap06}
+
+\include{zaver}
+
+%%% Seznam použité literatury
+\include{literatura}
+
+%%% Obrázky v bakalářské práci
+%%% (pokud jich je malé množství, obvykle není třeba seznam uvádět)
+%\listoffigures
+
+%%% Tabulky v bakalářské práci (opět nemusí být nutné uvádět)
+%%% U matematických prací může být lepší přemístit seznam tabulek na začátek práce.
+%\listoftables
+
+%%% Použité zkratky v bakalářské práci (opět nemusí být nutné uvádět)
+%%% U matematických prací může být lepší přemístit seznam zkratek na začátek práce.
+%\chapwithtoc{Seznam použitých zkratek}
+
+%%% Přílohy k bakalářské práci, existují-li. Každá příloha musí být alespoň jednou
+%%% odkazována z vlastního textu práce. Přílohy se číslují.
+%%%
+%%% Do tištěné verze se spíše hodí přílohy, které lze číst a prohlížet (dodatečné
+%%% tabulky a grafy, různé textové doplňky, ukázky výstupů z počítačových programů,
+%%% apod.). Do elektronické verze se hodí přílohy, které budou spíše používány
+%%% v elektronické podobě než čteny (zdrojové kódy programů, datové soubory,
+%%% interaktivní grafy apod.). Elektronické přílohy se nahrávají do SISu a lze
+%%% je také do práce vložit na CD/DVD. Povolené formáty souborů specifikuje
+%%% opatření rektora č. 72/2017.
+\appendix
+\include{prilohy}
+
+\openright
+\end{document}

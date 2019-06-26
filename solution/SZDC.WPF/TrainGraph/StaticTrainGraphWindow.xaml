@@ -1,0 +1,38 @@
+﻿<Window x:Class="SZDC.Wpf.TrainGraph.StaticTrainGraphWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:SZDC.Wpf"
+        xmlns:timetables="clr-namespace:SZDC.Wpf.TrainGraph"
+        mc:Ignorable="d"
+        xmlns:designer="clr-namespace:SZDC.Wpf.Designer"
+        xmlns:trainGraph="clr-namespace:SZDC.WPF.TrainGraph"
+        d:DesignHeight="450" d:DesignWidth="800"
+        d:DataContext="{d:DesignInstance designer:TrainTimetableDesignHelper, IsDesignTimeCreatable=True}"
+        Width="1344" Height="864">
+
+    <Window.Title>
+        <MultiBinding StringFormat="{}{0} railway {1}, {2} - {3}">
+            <Binding Path="TimetableInfo.TimetableType"/>
+            <Binding Path="TimetableInfo.RailwayNumber"/>
+            <Binding Path="TimetableInfo.FirstStationName"/>
+            <Binding Path="TimetableInfo.LastStationName"/>
+        </MultiBinding>
+    </Window.Title>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+        <timetables:TrainGraphHeader Grid.Row="0"/>
+        <trainGraph:TrainGraphControl Grid.Row="1"/>
+        <ListView Grid.Row="2" ItemsSource="{Binding Path=Errors}"/>
+    </Grid>
+</Window>

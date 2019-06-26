@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateOutputOnBuild>False</GenerateOutputOnBuild>
+  </PropertyGroup>
+  <Import Project="..\build\Autofac.props" />
+  <Import Project="..\build\Newtonsoft.Json.props" />
+  <Import Project="..\build\Reactive.props" />
+  <Import Project="..\build\Base.props" />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTTG.Core\GTTG.Core.csproj" />
+    <ProjectReference Include="..\SZDC.Model\SZDC.Model.csproj" />
+  </ItemGroup>
+</Project>

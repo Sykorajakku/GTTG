@@ -1,0 +1,56 @@
+{
+    "railways" : {
+    
+    "306" : {
+        
+        "railwaySegments"  : [
+            [
+                { "stationName" : "Studénka", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Sedlnice-Bartošovice", "kilometersValue" : 4.8, "kilometersString" : "4.8" },
+                { "stationName" : "Sedlnice z", "kilometersValue" : 6.4, "kilometersString" : "6.4" },
+                { "stationName" : "Sedlnice výh.č.1", "kilometersValue" : 6.5, "kilometersString" : "6.5" },
+                { "stationName" : "Sedlnice předj.k.", "kilometersValue" : 7.4, "kilometersString" : "7.4" },
+                { "stationName" : "Skotnice z", "kilometersValue" : 10.1, "kilometersString" : "10.1" },
+                { "stationName" : "Příbor", "kilometersValue" : 13.2, "kilometersString" : "13.2" },
+                { "stationName" : "Kopřivnice nákl.nádr", "kilometersValue" : 16.0, "kilometersString" : "16.0" },
+                { "stationName" : "Kopřivnice zast. z", "kilometersValue" : 16.8, "kilometersString" : "16.8" },
+                { "stationName" : "Kopřivnice", "kilometersValue" : 17.8, "kilometersString" : "17.8"},
+                { "stationName" : "Štramberk", "kilometersValue" : 19.7, "kilometersString" : "19.7" },
+                { "stationName" : "Ženklava z", "kilometersValue" : 22.2, "kilometersString" : "22.2" },
+                { "stationName" : "Veřovice", "kilometersValue" : 26.1, "kilometersString" : "26.1" }
+            ],
+            [   
+                { "stationName" : "Studénka", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Studénka město z", "kilometersValue" : 1.3, "kilometersString" : "1.3" },
+                { "stationName" : "Velké Albrechtice z", "kilometersValue" : 6.0, "kilometersString" : "6.0" },
+                { "stationName" : "Bílovec", "kilometersValue" : 7.4, "kilometersString" : "7.4" }
+            ],
+            [   
+                { "stationName" : "Suchdol nad Odrou", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Mankovice z", "kilometersValue" : 5.0, "kilometersString" : "5.0" },
+                { "stationName" : "Odry", "kilometersValue" : 10.3, "kilometersString" : "10.3" },
+                { "stationName" : "Odry-Loučky z", "kilometersValue" : 12.8, "kilometersString" : "12.8" },
+                { "stationName" : "Jakubčovice n.O. z", "kilometersValue" : 14.8, "kilometersString" : "14.8" },
+                { "stationName" : "Heřmánky", "kilometersValue" : 17.9, "kilometersString" : "17.9" },
+                { "stationName" : "Klokočov z", "kilometersValue" : 20.9, "kilometersString" : "20.9" },
+                { "stationName" : "Vítkov", "kilometersValue" : 26.6, "kilometersString" : "26.6" },
+                { "stationName" : "Čermná ve Slezsku nz", "kilometersValue" : 26.9, "kilometersString" : "26.9" },
+                { "stationName" : "Svatoňovice", "kilometersValue" : 33.8, "kilometersString" : "33.8" },
+                { "stationName" : "Budišov n.Budišovkou", "kilometersValue" : 39.0, "kilometersString" : "39.0" }
+            ],
+            [
+                { "stationName" : "Suchdol nad Odrou", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Hlad.Životice m.n. z", "kilometersValue" : 4.7, "kilometersString" : "4.7" },
+                { "stationName" : "Stachovice z", "kilometersValue" : 6.9, "kilometersString" : "6.9" },
+                { "stationName" : "Fulnek", "kilometersValue" : 9.6, "kilometersString" : "9.6" }
+            ],
+            [  
+                { "stationName" : "Suchdol nad Odrou", "kilometersValue" : 0.0, "kilometersString" : "0.0" },
+                { "stationName" : "Šenov u N.Jičína z", "kilometersValue" : 6.3, "kilometersString" : "6.3" },
+                { "stationName" : "Nový Jičín město", "kilometersValue" : 8.2, "kilometersString" : "8.2" }
+            ]
+        ]
+    }
+}
+
+}

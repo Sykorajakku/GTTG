@@ -1,0 +1,78 @@
+{
+    "railways" : {
+    
+    "503a_544" : {
+        
+        "railwaySegments"  : [
+            [
+                { "stationName" : "Ústí n.L.-Střekov", "kilometersValue" : 0.0, "kilometersString" : "431.1" },
+                { "stationName" : "Svádov z", "kilometersValue" : 4.7, "kilometersString" : "435.8" },
+                { "stationName" : "Valtířov z", "kilometersValue" : 7.4, "kilometersString" : "437.5" },
+                { "stationName" : "Velké Březno", "kilometersValue" : 9.5, "kilometersString" : "439.6" },
+                { "stationName" : "Malé Březno n. L. z", "kilometersValue" : 11.3, "kilometersString" : "441.4" },
+                { "stationName" : "Těchlovice z", "kilometersValue" : 15.2, "kilometersString" : "445.3" },
+                { "stationName" : "Boletice nad Labem", "kilometersValue" : 19.7, "kilometersString" : "449.8" },
+                { "stationName" : "Křešice u Děčína z", "kilometersValue" : 22.7, "kilometersString" : "452.8" },
+                { "stationName" : "Děčín-Staré Město z", "kilometersValue" : 24, "kilometersString" : "454.1" },
+                { "stationName" : "Děčín východ dol.n", "kilometersValue" : 26.8, "kilometersString" : "456.9" },
+                { "stationName" : "Děčín východ", "kilometersValue" : 27, "kilometersString" : "456.9=3.5" },
+                { "stationName" : "Děčín hl.n", "kilometersValue" : 29, "kilometersString" : "1.5=539.9" },
+                { "stationName" : "Děčín hl.n.nákl.n", "kilometersValue" : 30.2, "kilometersString" : "538.8" }
+            ],
+            [   
+                { "stationName" : "Děčín východ dol.n", "kilometersValue" : 0.0, "kilometersString" : "469.9" },
+                { "stationName" : "Děčín-Prostřed. Žleb", "kilometersValue" : 2.5, "kilometersString" : "459.4" }
+            ],
+            [   
+                { "stationName" : "Děčín hl.n.nákl.n", "kilometersValue" : 0, "kilometersString" : "538.8" },
+                { "stationName" : "Děčín hl.n", "kilometersValue" : 0.8, "kilometersString" : "539.6=0.5" },
+                { "stationName" : "Děčín-Přípeř z", "kilometersValue" : 2.2, "kilometersString" : "1.9" },
+                { "stationName" : "Děčín-Prostřed. Žleb", "kilometersValue" : 4.1, "kilometersString" : "3.8" },
+                { "stationName" : "Děčín-Čertova Voda z", "kilometersValue" : 7.3, "kilometersString" : "6.8" },
+                { "stationName" : "Dolní Žleb", "kilometersValue" : 9.6, "kilometersString" : "9.1" },
+                { "stationName" : "Dolní Žleb zast. z", "kilometersValue" : 10.8, "kilometersString" : "10.3" },
+                { "stationName" : "Schöna", "kilometersValue" : 14.5, "kilometersString" : "13.9" },
+                { "stationName" : "Schmilka-Hirschmühle", "kilometersValue" : 26.9, "kilometersString" : "15.6" },
+                { "stationName" : "Bad Schandau Ost", "kilometersValue" : 30.7, "kilometersString" : "19.8" },
+                { "stationName" : "Krippen Hp", "kilometersValue" : 32.1, "kilometersString" : "21.2" },
+                { "stationName" : "Bad Schandau", "kilometersValue" : 32.7, "kilometersString" : "22.8" }
+
+            ],
+            [
+                { "stationName" : "Ústí n.L.-Střekov", "kilometersValue" : 0.0, "kilometersString" : "431.1" },
+                { "stationName" : "Svádov z", "kilometersValue" : 4.7, "kilometersString" : "435.8" },
+                { "stationName" : "Valtířov z", "kilometersValue" : 6.4, "kilometersString" : "437.5" },
+                { "stationName" : "Velké Březno", "kilometersValue" : 8.5, "kilometersString" : "439.6" },
+                { "stationName" : "Malé Březno n. L. z", "kilometersValue" : 10.3, "kilometersString" : "441.4" },
+                { "stationName" : "Těchlovice z", "kilometersValue" : 14.2, "kilometersString" : "445.3" },
+                { "stationName" : "Boletice nad Labem", "kilometersValue" : 18.7, "kilometersString" : "449.8" },
+                { "stationName" : "Křešice u Děčína z", "kilometersValue" : 21.7, "kilometersString" : "452.8" },
+                { "stationName" : "Děčín-Staré Město z", "kilometersValue" : 23, "kilometersString" : "454.1" },
+                { "stationName" : "Děčín východ dol.n", "kilometersValue" : 25.8, "kilometersString" : "456.9" },
+                { "stationName" : "Děčín východ", "kilometersValue" : 26, "kilometersString" : "456.9=3.9" },
+                { "stationName" : "Děčín hl.n", "kilometersValue" : 28.4, "kilometersString" : "1.5=539.6" },
+                { "stationName" : "Děčín hl.n.nákl.n", "kilometersValue" : 29.2, "kilometersString" : "538.8" }
+            ],
+            [  
+                { "stationName" : "Děčín východ dol.n", "kilometersValue" : 0.0, "kilometersString" : "456.9" },
+                { "stationName" : "Děčín-Prostřed. Žleb", "kilometersValue" : 2.5, "kilometersString" : "459.4" }
+            ],
+            [
+                { "stationName" : "Děčín hl.n.nákl.n", "kilometersValue" : 0.0, "kilometersString" : "538.8" },
+                { "stationName" : "Děčín hl.n", "kilometersValue" : 0.8, "kilometersString" : "539.6=0.5" },
+                { "stationName" : "Děčín-Přípeř z", "kilometersValue" : 2.2, "kilometersString" : "1.9" },
+                { "stationName" : "Děčín-Prostřed. Žleb", "kilometersValue" : 4.1, "kilometersString" : "3.8" },
+                { "stationName" : "Děčín-Čertova Voda z", "kilometersValue" : 7.1, "kilometersString" : "6.8" },
+                { "stationName" : "Dolní Žleb zast. z", "kilometersValue" : 9.4, "kilometersString" : "9.1" },
+                { "stationName" : "Dolní Žleb", "kilometersValue" : 10.6, "kilometersString" : "10.3" },
+                { "stationName" : "Schöna", "kilometersValue" : 14.2, "kilometersString" : "13.9" },
+                { "stationName" : "Schmilka-Hirschmühle", "kilometersValue" : 15.9, "kilometersString" : "15.6" },
+                { "stationName" : "Bad Schandau Ost", "kilometersValue" : 20.1, "kilometersString" : "19.8" },
+                { "stationName" : "Krippen Hp", "kilometersValue" : 21.4, "kilometersString" : "21.2" },
+                { "stationName" : "Bad Schandau", "kilometersValue" : 23, "kilometersString" : "22.8" }
+            ]
+        ]
+    }
+}
+
+}

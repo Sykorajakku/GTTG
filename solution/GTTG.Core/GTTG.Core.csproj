@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Description>GTTG.Core is core part of library GTTG for train graphs visualization. Includes tools to create and describe generic visual content of train graphs. Provides tools to integrate created content to GUI applications. Utilizes SkiaSharp as 2D graphics API.</Description>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Sykoj/GTTG</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/Sykoj/GTTG</RepositoryUrl>
+    <PackageTags>train-graph GTTG train-timetables</PackageTags>
+    <Authors>Jakub Sýkora</Authors>
+    <Company />
+    <Product>GTTG</Product>
+    <Version>1.0.4</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <Import Project="..\build\SkiaSharp.props" />
+  <Import Project="..\build\Base.props" />
+
+</Project>

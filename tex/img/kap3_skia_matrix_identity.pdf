@@ -1,0 +1,235 @@
+%PDF-1.5
+%âãÏÓ
+2 0 obj
+<<
+/MarkInfo 4 0 R
+/Metadata 5 0 R
+/Outlines 6 0 R
+/OutputIntents 7 0 R
+/Pages 8 0 R
+/PieceInfo 9 0 R
+/StructTreeRoot 10 0 R
+/Type /Catalog
+/Version /1.5
+>>
+endobj
+5 0 obj
+<<
+/Length 7732
+/Subtype /XML
+/Type /Metadata
+>>
+stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 5.5.0">
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<rdf:Description rdf:about=""
+				xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+				xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+				xmlns:dc="http://purl.org/dc/elements/1.1/"
+				xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+				xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+				xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+				xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#"
+				xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">
+			<xmp:CreatorTool>Sejda 3.2.71 (www.sejda.org)</xmp:CreatorTool>
+			<xmp:CreateDate>2019-04-17T21:34:33+02:00</xmp:CreateDate>
+			<xmp:ModifyDate>2019-04-21T13:47:20+02:00</xmp:ModifyDate>
+			<pdf:Producer>SAMBox 1.1.50 (www.sejda.org)</pdf:Producer>
+			<dc:format>application/pdf</dc:format>
+			<xmpMM:DocumentID>uuid:63be6e45-3fc1-4c3f-85b3-99c69c914a62</xmpMM:DocumentID>
+			<xmpMM:InstanceID>uuid:06b6fbc3-af44-468b-b004-fd693147412e</xmpMM:InstanceID>
+			<pdfaExtension:schemas>
+				<rdf:Bag>
+					<rdf:li rdf:parseType="Resource">
+						<pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>
+						<pdfaSchema:prefix>pdf</pdfaSchema:prefix>
+						<pdfaSchema:schema>Adobe PDF Schema</pdfaSchema:schema>
+						<pdfaSchema:property>
+							<rdf:Seq>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>Producer</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>Text</pdfaProperty:valueType>
+									<pdfaProperty:description>The name of the tool that created the PDF document</pdfaProperty:description>
+								</rdf:li>
+							</rdf:Seq>
+						</pdfaSchema:property>
+						<pdfaSchema:valueType>
+							<rdf:Seq/>
+						</pdfaSchema:valueType>
+					</rdf:li>
+					<rdf:li rdf:parseType="Resource">
+						<pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/</pdfaSchema:namespaceURI>
+						<pdfaSchema:prefix>xmp</pdfaSchema:prefix>
+						<pdfaSchema:schema>XMP Basic schema</pdfaSchema:schema>
+						<pdfaSchema:property>
+							<rdf:Seq>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>CreatorTool</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>Text</pdfaProperty:valueType>
+									<pdfaProperty:description>The name of the first known tool used to create the resource</pdfaProperty:description>
+								</rdf:li>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>CreateDate</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>Date</pdfaProperty:valueType>
+									<pdfaProperty:description>The date and time the resource was originally created</pdfaProperty:description>
+								</rdf:li>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>ModifyDate</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>Date</pdfaProperty:valueType>
+									<pdfaProperty:description>The date and time the resource was last modified</pdfaProperty:description>
+								</rdf:li>
+							</rdf:Seq>
+						</pdfaSchema:property>
+						<pdfaSchema:valueType>
+							<rdf:Seq/>
+						</pdfaSchema:valueType>
+					</rdf:li>
+					<rdf:li rdf:parseType="Resource">
+						<pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+						<pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+						<pdfaSchema:schema>XMP Media Management schema</pdfaSchema:schema>
+						<pdfaSchema:property>
+							<rdf:Seq>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>DocumentID</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>URI</pdfaProperty:valueType>
+									<pdfaProperty:description>The common identifier for all versions and renditions of a document</pdfaProperty:description>
+								</rdf:li>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>InstanceID</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>URI</pdfaProperty:valueType>
+									<pdfaProperty:description>An identifier for a specific incarnation of a document, updated each time a file is saved</pdfaProperty:description>
+								</rdf:li>
+							</rdf:Seq>
+						</pdfaSchema:property>
+						<pdfaSchema:valueType>
+							<rdf:Seq/>
+						</pdfaSchema:valueType>
+					</rdf:li>
+					<rdf:li rdf:parseType="Resource">
+						<pdfaSchema:namespaceURI>http://purl.org/dc/elements/1.1/</pdfaSchema:namespaceURI>
+						<pdfaSchema:prefix>dc</pdfaSchema:prefix>
+						<pdfaSchema:schema>Dublin Core schema</pdfaSchema:schema>
+						<pdfaSchema:property>
+							<rdf:Seq>
+								<rdf:li rdf:parseType="Resource">
+									<pdfaProperty:name>format</pdfaProperty:name>
+									<pdfaProperty:category>external</pdfaProperty:category>
+									<pdfaProperty:valueType>Text</pdfaProperty:valueType>
+									<pdfaProperty:description>The file format used when saving the resource. Tools and applications should set this property to the save format of the data</pdfaProperty:description>
+								</rdf:li>
+							</rdf:Seq>
+						</pdfaSchema:property>
+						<pdfaSchema:valueType>
+							<rdf:Seq/>
+						</pdfaSchema:valueType>
+					</rdf:li>
+				</rdf:Bag>
+			</pdfaExtension:schemas>
+			<pdfaid:part>2</pdfaid:part>
+			<pdfaid:conformance>A</pdfaid:conformance>
+		</rdf:Description>
+	</rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstream
+endobj
+15 0 obj
+<<
+/Filter /FlateDecode
+/Length 2593
+/N 3
+>>
+stream
+xœ–wTT×‡Ï½wz¡Í0tz¯Ré¤WQfÊ ÃØ"*QD¤)‚EbEQ{@‚€ƒQl¨dFÖJ|yyïåå÷Ç=ßÚgïs÷Ù{ßµ. $/?./– 'à{ºĞ#£¢éØ~ <À s ˜¬¬ÿP ’·»+=KäşE¯‡$^o{Òéàÿ“4+ƒ/  
+ñ6'‹%â<§æ2ÄöYSãSÄ£ÄÌ%(by1'.²ÑgŸEv3;Ç±8çv[Ì="Ş‘-äˆñq~6—“#âÛ"ÖJ¦qEüV›Æaf€"‰í+IÄf"&ñCƒ]E¼ )ñÿ‚œÕñ¥\Ó3Öğ¹‰IºKŸnnkË {qrR9q “•Âä³é®éiLŞ ïüY2âÚÒEE¶6·µ¶6¶01ÿ¢PÿuóoJÜÛEzô¹g­ïÛ_ù¥×À˜Õf÷¶ø
+ :¶ ï›Ö! $E}køâ>4ñ¼$	v¦¦999&\ËD\Ğßõ?ş†¾xŸ‰ø¸ßËCwã$0…©º¸n¬ôÔt!Ÿ•ÁdqèÆâø×ys8|O.š2./QÔn›+à¦óè\Şjâ?û“çZ$Jı'@5RT€üÜP"@bŠv ßûæ‡¢5Bmrqî?ú÷Sábñ#‹›ø9Î58”Îò³÷ÄŸ%@T  T&ĞÆÀØ {àÜ ¡ 
+¬,Ò ä€õ`È…`7Ø*A¨ œ à4¸ .ƒëà÷Á(˜ ÏÀ,xæ!ÂBdˆ)@j6dY@häùAÁP%B<H­‡¶B…P	T	ÕBĞ·Ğ)èt„îBcĞ4ô+ôF`L…U`ØfÀÎ°/
+¯„áLx-œï‚Ëá:øÜ_€¯ÃCğ(üC BDhˆ:bŒ0W$ ‰F>²)@Ê:¤éBz‘[È(2ƒ¼CaPeŒ²Gy¡ÂP,T&j#ªU‰:ŠjGõ n¡ÆP³¨Oh2Zmˆ¶C{£#Ñ‰èt>ºİ€nC_B¡'Ğ¯1£‹±Áxa¢0É˜u˜"ÌL+æ<f3™Ãb±
+XC¬6 ËÄ
+°ùØ
+ì1ì9ìMìö-ˆSÃYà<pÑ8.W†kÂÅİÄMâæñRxm¼> ÏÆ¯Áãëñ]øü~ MĞ%8B	É„-„rBááá%‘HÔ Úƒˆ\âfb9ñ8ñ
+qŒø$C2 ¹’bHBÒ.ÒÒyÒ]ÒK2™¬Cv"G“ä]äFòEò#ò[	Š„‰„·[b“D•D»ÄM‰ç’xImIgÉU’k%Ë$OJHÎHá¥t¤\¥˜R¥ª¤NIHÍIS¤Í¥¤Ó¤‹¤›¤¯JOÉ`etdÜeØ2y2‡e.ÊŒSŠ&Å•Â¢l¥ÔS.Q&¨ª.Õ›šL-¤~Cí§ÎÊÊÈZÊ†Ë®–­’=#;JCh:4oZ*­˜v‚6L{/§"ç,Ç‘Û)×"wSî¼’¼“<G¾@¾U~Hş½]Á]!EaB‡ÂCE”¢bbâAÅKŠ3JT%{%–RÒ	¥{Ê°²r°ò:åÃÊ}Ês*ª****UfTiªNªÉª¥ªgU§Õ(jËÔ¸j¥jçÔÒeéÎôTz9½‡>«®¬î¥.T¯UïWŸ×ĞÕÓÈÕhÕx¨IĞdh&h–jvkÎj©iùk­×jÖº§×fh'iï×îÕ~££«¡³]§CgJW^×[w­n³î=²£^¦^Şm}Œ>C?Eÿ€şØÀÊ É Ê`À6´6ä04BÙñŒêŒFŒIÆÎÆÙÆÍÆc&4?“\““ç¦Z¦Ñ¦{L{M?™Y™¥šÕ›İ7—1÷1Ï5ï2ÿÕÂÀ‚eQeq{	y‰Ç’MK:—¼°4´äX´¼cE±ò·ÚnÕmõÑÚÆšoİb=m£egSm3Â 2EŒ+¶h[ÛM¶§mßÙYÛ	ìNØıbolŸbßd?µTw)giıÒq¦C­Ãè2ú²¸e‡–:ª;2ë;i:±œ&õ“9?w1sá»´¹¼qµsİàzŞqót+pëw—qs¯tä¡á‘èÑì1ëiå¹Îó¼ÚË×k×ˆ·Š7Ë»Ñ{ÖÇÆgƒO/É7Ä·Ò÷±Ÿß¯Ëö÷ñßëÿ`¹örŞò à°7àa n`fà÷A˜ À ª 'ÁæÁëƒ{C(!±!M!¯C]B‹Cï‡é…	ÃºÃ%ÃcÂÃßD¸E”DŒFšFnˆ¼¥ÅêŒÆF‡G7DÏ­p_±oÅDŒUL~ÌğJİ•«W^]¥¸*uÕ™XÉXfìÉ8t\D\SÜf ³9ï_?Ëreíg=c;±KÙÓN	g2Á!¡$a*Ñ!qoât’cRYÒ×•[É}‘ì•\“ü&% åHÊBjDjk.-.íO†—ÂëIWM_>˜a˜‘Ÿ1ši—¹/s–ïËoÈ‚²Vfu
+¨¢Ÿ©>¡p›p,{YvUöÛœğœ“«¥WóV÷­1X³sÍäZµ_¯C­c­ë^¯¾~Ëú±Îj7Bã7voÒÜ”·ib³çæ£[[R¶ük–[’ûjkÄÖ®<•¼ÍyãÛ<·5çKäóóG¶Ûo¯ÙÚÁİÑ¿sÉÎŠŸ
+Ø×
+Í
+Ë
+?±Š®}eşUùW»võ[ÜÙÍÛ=¼ÇqÏÑé’µ%ã{ı÷¶—ÒKJ_í‹İwµÌ²¬f?a¿pÿh¹_yg…VÅîŠ•I•CU.U­ÕÊÕ;«ß`¸yĞé`KJMaÍûCÜCwj=kÛëtêÊcg~R^ßû5ãëÆÅ†Â†GxGFíi´illRn*n†›…ÍÓÇbİøÆí›Îã–ÚVZkáqp\xüé·qßŸğ=Ñ}’q²å;íïªÛ(míPûšöÙ¤ÑÎ¨ÎÁS>§º»ì»Ú¾7ùşÈiõÓUgdÏŸ%œÍ;»pní¹¹óçg.$^ïí¾1òâí şK¾—®\ö¸|±×¹÷Ü‡+§¯Ú]=uq­ãºõõö>«¾¶¬~hë·îo°è¼a{£kpéàÙ›7/Ür»uù¶÷íëCË‡‡Ã†ïŒÄŒŒŞaß™º›z÷Å½ì{ó÷7?@?(x(õ°ì‘ò£ºõlµ=3æ6Ö÷8äñıqÖø³Ÿ²~ú0‘÷„ü¤lRm²qÊbêô´Çô§+N<Ëx6?“ÿ³ôÏÕÏõ÷‹Ó/}³‘³/ø/~-z©ğòÈ+ËWİss^§½SğVáíÑwŒw½ï#ŞOÎç|À~(ÿ¨ÿ±ë“ï§i¿÷„óû
+endstream
+endobj
+16 0 obj
+<<
+/Filter /FlateDecode
+/Length 284
+>>
+stream
+xÚ]‘ËjÃ0E÷úŠûÏh$Y‚Eú²i–!+7q[—Ò~~Ç±eJddsïÑ¨yzï¿‡ÓjÕl6Ÿ¿8xÄ9¡(¥’/m©pÄq½ÆæáŞ5Û=£ÿ‰*(†8ECÛw7ÒFjCfõè.®
+›R"ly
+3ğ1œpv;S¾áÉÉ8â#C“æ¶ªRS#0`Êf1ô®ŸÈ·-.KªSôÑF¥<*'%ñ£ƒRÔ²Ì;[ôïDE™²É¡su#Ÿ–ô\ÈîYå§Y·ØÏ»®æŞàwîm®_ëû²µß³õPbÁv8¯óP±ı5«Ï”R€AhñĞ4>§¿^%s«¿wÉUkc
+endstream
+endobj
+3 0 obj
+<<
+/Filter /FlateDecode
+/First 97
+/Length 554
+/N 15
+/Type /ObjStm
+>>
+stream
+xÚ…R]kÛ@|¿_±oq(•oO²N*!à¯“šËo	B:µ¶ÎœNuòï³'YvÒ
+I{3»;sƒÀY JF!“ xÄ"(Y"ä9ˆˆ^>FaÈĞÉ}†È f(Aè,‚ˆhC4LpˆyÌîîXlTj]NR« 7ù&8Æ<@)Ğ|ÿ7œßÜqÚ@/Q¿ò|Oxá±w:¼Ê•<mo	¹ĞùÇf©—üÚlit^gÊu.FúĞCoÀ?kwß¬¹HÍo•ƒ5µêJë×£‚şÏÚî‹RU®º!#8¬¶­0]—õŠ¼‚™ÓiËô¹å8hEó€|#DW{ 2ĞıŸ		ÎìÚ(µÒÚv¨‰ª,mp¬-IÚ{8hYór§¡W­f#˜OÇ!ÆaøUxHâ[üX—yáŒ‡Ş¿µy®J[ì
+çĞ¸®¬>&şl<-'ß‡øN=ñæ¥%|·Óh¯TîLİpZ%@ô¸ğC("îo9¥¢tµë>6„ã‡›]‰Ù‚*/Òÿt^¦†CÔ2VªÒµÉTn³é‹%ÖeÃıÍN±î<§§¿ÒÍ!'u¦8|²Îõî:±?ÒÊRàœWù_ñ¹¼$®	Gü.dæDı)2ED—ÕËY¼6iYˆìµØ¸ĞMÌRªñ.—p‘uÍà­ş%àùËÔY}põ!RÓ½:4ûmÙ^Şü
+endstream
+endobj
+21 0 obj
+<<
+/DecodeParms <<
+/Columns 4
+/Predictor 12
+>>
+/DL 80
+/Filter /FlateDecode
+/ID [<404D8DC49C257F497B9E8DC4199A9E93> <404D8DC49C257F497B9E8DC4199A9E93>]
+/Info 1 0 R
+/Length 66
+/Root 2 0 R
+/Size 22
+/Type /XRef
+/W [1 2 1]
+>>
+stream
+xÚcb``øÏÄÄÀÌÈôŸ‡‰A›‰ñê[wÇ&F $#1Äy»oL\@®qcÈê.ş ü6
+endstream
+endobj
+startxref
+11686
+%%EOF

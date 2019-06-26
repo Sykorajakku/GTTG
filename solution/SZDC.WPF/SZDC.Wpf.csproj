@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{200B7DDF-24DB-4789-BA9E-2AA6D947E26D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SZDC.WPF</RootNamespace>
+    <AssemblyName>SZDC.WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\RailwayDistanceComponent.xaml.cs">
+      <DependentUpon>RailwayDistanceComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ConvertedTimeComponent.cs" />
+    <Compile Include="Converters\CurrentTimeConverter.cs" />
+    <Compile Include="Converters\DayHoursConverter.cs" />
+    <Compile Include="Converters\HasSelectedTrainConverter.cs" />
+    <Compile Include="Converters\HitTestComponentConverter.cs" />
+    <Compile Include="Converters\IsSelectedConverter.cs" />
+    <Compile Include="Converters\Multibinding.cs" />
+    <Compile Include="Converters\MovementEventTypeConverter.cs" />
+    <Compile Include="Converters\OpenCommandConverter.cs" />
+    <Compile Include="Converters\ScaleToIsScaledConverter.cs" />
+    <Compile Include="Converters\TimeIntervalConverter.cs" />
+    <Compile Include="Converters\StationNameConverter.cs" />
+    <Compile Include="Converters\TrainSelectionToolConverter.cs" />
+    <Compile Include="Designer\TimeComponentDesigner.cs" />
+    <Compile Include="Designer\TrainSelectionDesigner.cs" />
+    <Compile Include="Designer\TrainTimetableDesignHelper.cs" />
+    <Compile Include="Editor\Command.cs" />
+    <Compile Include="Editor\ProjectEditorCommands.cs" />
+    <Compile Include="Converters\RailwaySegmentConverter.cs" />
+    <Compile Include="Modifiers\TimeComponentControl.xaml.cs">
+      <DependentUpon>TimeComponentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainGraph\DynamicTrainGraphWindow.xaml.cs">
+      <DependentUpon>DynamicTrainGraphWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainGraph\TrainGraphHeader.xaml.cs">
+      <DependentUpon>TrainGraphHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardControl.xaml.cs">
+      <DependentUpon>DashboardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\TimetableTypeControl.xaml.cs">
+      <DependentUpon>TimetableTypeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainGraph\TrainSelectionControl.xaml.cs">
+      <DependentUpon>TrainSelectionControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Designer\DesignerHelper.cs" />
+    <Compile Include="Modifiers\TrainModifier.xaml.cs">
+      <DependentUpon>TrainModifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modifiers\ViewTimeModifier.xaml.cs">
+      <DependentUpon>ViewTimeModifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LocatorModule.cs" />
+    <Compile Include="Modules\DataModule.cs" />
+    <Compile Include="TrainGraph\TrainGraphControl.xaml.cs">
+      <DependentUpon>TrainGraphControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainGraph\StaticTrainGraphWindow.xaml.cs">
+      <DependentUpon>StaticTrainGraphWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Components\RailwayDistanceComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\StationListComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\TimeAxisComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\TrainGraphComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Components\StationListComponent.xaml.cs">
+      <DependentUpon>StationListComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TimeAxisComponent.xaml.cs">
+      <DependentUpon>TimeAxisComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TrainGraphComponent.xaml.cs">
+      <DependentUpon>TrainGraphComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Input\WpfMouseInputSource.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Modifiers\TimeComponentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modifiers\TrainModifier.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modifiers\ViewTimeModifier.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainGraph\TrainGraphControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainGraph\DynamicTrainGraphWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainGraph\StaticTrainGraphWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainGraph\TrainGraphHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dashboard\DashboardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dashboard\TimetableTypeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainGraph\TrainSelectionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\CoreModule.cs" />
+    <Compile Include="Modules\ViewModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="..\szdc.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTTG.Core\GTTG.Core.csproj">
+      <Project>{ab9212c9-a277-4f7e-9784-95ed61c33eb0}</Project>
+      <Name>GTTG.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GTTG.Model\GTTG.Model.csproj">
+      <Project>{626239cf-9de1-46ae-b111-24a132467e15}</Project>
+      <Name>GTTG.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SZDC.Data\SZDC.Data.csproj">
+      <Project>{04701574-f20c-4c01-94f6-66ce062f47b9}</Project>
+      <Name>SZDC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SZDC.Editor\SZDC.Editor.csproj">
+      <Project>{c7e12554-f27f-428f-a1c1-3f8099b46407}</Project>
+      <Name>SZDC.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SZDC.Model\SZDC.Model.csproj">
+      <Project>{7a4ec013-9087-4033-82bd-489a0eb749e0}</Project>
+      <Name>SZDC.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac">
+      <Version>4.9.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Primitives">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Remotion.Linq">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp">
+      <Version>1.68.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views">
+      <Version>1.68.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Buffers">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>1.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.DiagnosticSource">
+      <Version>4.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Interactive.Async">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reactive">
+      <Version>4.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>4.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Tasks.Extensions">
+      <Version>4.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /h/i/c/k/e/r/y $(ProjectDir)$(OutDir)*.*    .\..\..\..\..\binaries</PostBuildEvent>
+  </PropertyGroup>
+</Project>

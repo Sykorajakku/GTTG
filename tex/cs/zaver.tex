@@ -1,0 +1,46 @@
+\chapter*{Závěr}
+\addcontentsline{toc}{chapter}{Závěr}
+
+V~závěru této práce zhodnotíme splnění cílů vytyčených v~podkapitole \ref{kap1:cile_prace}.
+
+\begin{enumerate}[label=\color{goalcolor}\textbf{G{\arabic*}}]
+	\item \textit{Vytvořit knihovnu pro platformu .NET, představující grafickou komponentu, umožňující práci s~nákresnými jízdními řády.}
+	\begin{enumerate}[label=\color{goalcolor}\textbf{\alph*})]
+		\item \textit{Podporovat zobrazování různých typů nákresných jízdních řádů} -- Naše knihovna umožňuje strukturováním obsahu do vrstev a~poskytnutím obecných struktur systematicky popsat jakýkoliv typ nákresného jízdního řádu. Nabízí konfigurovatelnou základní vizualizaci nákresného jízdního řádu, rozšířením použitelnou pro vizualizaci konkrétních typů nákresných jízdních řádů. Popsali a~vyvinuli jsme nástroje, které práci s~obsahem nákresného jízdního řádu ulehčují.
+		\item \textit{Podporovat integraci komponenty do aplikací pracujících s~grafikonem vlakové dopravy} -- Nabízené konfigurace komponenty a~její obecné úpravy umožňují její integraci do různých aplikacích, lišících se způsobem ovládání komponenty. Uživatel aplikace může navíc interaktivně pracovat přímo s~obsahem nákresných jízdních řádů.
+		\item \textit{Umožnit replikovat chování existujících aplikací pracujících s~grafikonem vlakové dopravy} -- Knihovnu jsme implementovali podle požadavků v~kapitole \ref{kap:spec} založených na chování existujících aplikací. Komponentu je navíc možné narozdíl od existujících aplikací interaktivně ovládat přiblížováním a~oddalováním pohledu.
+		\item \textit{Zajistit přenositelnost knihovny na úrovni .NET Standard} -- Knihovna je implementována vůči rozhraní .NET Standard 2.0. Je tak použitelná v~různých aplikacích, které jsou vyvíjeny vůči konkrétním běhovým prostředí platformy .NET.
+	\end{enumerate}	
+
+\item \textit{Použít tuto knihovnu pro implementaci aplikace, která bude sloužit pro práci s~grafikonem vlakové dopravy.}
+	\begin{enumerate}[label=\color{goalcolor}\textbf{\alph*})]
+		\item \textit{Aplikace bude interaktivně zobrazovat listy nákresného jízdního řádu vydávané Správou železniční dopravní cesty} -- Získali jsme textovou reprezentaci dat vizualizovaných v~nákresných jízdních řádech Správy železniční dopravní cesty. Na základě získaných dat jsme vytvořili model, který při vizualizaci odpovídá předloze. Ověřili jsme, že je možné knihovnu využít pro vytvoření konkrétního typu nákresného jízdního řádu. Ukázalo se, že implementace knihovny umožňuje plynule zobrazovat větší množství zobrazovaných tras vlaků.
+		\item \textit{Aplikace bude pro ilustrační účely knihovny nabízet mód simulující provoz na trati, v~jehož rámci bude možné upravovat výhledovou dopravu} -- Implementací tohoto módu jsme předvedli, že je možné obsah nákresného jízdního řádu interaktivně upravovat.
+		\item \textit{Aplikace bude navržena tak, aby část pracující s~modelem dat, představující logiku aplikace, byla zapojitelná do více GUI frameworků platformy .NET} -- Aplikační logika a~model jsou implementovány vůči rozhraní .NET Standard a~využitím nástrojů používaných GUI frameworky platformy .NET je aplikace do těchto frameworků plně  zapojitelná.
+	\end{enumerate}
+
+	\item \textit{Ověřit možnost využití 2D grafické knihovny SkiaSharp pro zobrazování komplexních dat obsažených v~nákresných jízdních řádech.}\newline -- Použití knihovny SkiaSharp se ukázalo jako správné řešení. Propojením optimalizací knihovny SkiaSharp a~GTTG jsme dokázali vytvořit nástroj, který zvládá plynule zobrazovat i~velmi frekventovaný provoz na trati. Jednou z~věcí, s~kterou bylo problematické pracovat, je určení přesné velikosti textu. Tento problém je ale pro vývojáře lehce řešitelný díky návrhu knihovny, kdy změřené hodnoty není potřeba přepočítávat pro různé velikosti.
+\end{enumerate}
+
+\subsubsection{Možné pokračování}
+V~budoucnu bychom chtěli knihovnu GTTG případně rozšiřovat:
+\begin{itemize}
+	\item	Knihovnu rozšířit na framework umožňující vývojářům specifikovat různé požadavky pro vytvoření view modelu. Framework by vytvořil požadovanou implementaci za vývojáře.
+	\item	Vytvořit nástroje ulehčující vývojářům práci s~některými částmi knihovny SkiaSharp, například nástroj nahrazující měření textu pomocí vlastností \linebreak \texttt{SKPaint.FontMetrics}, které jsou pro vývojáře složitější na pochopení.
+	\item 	Rozšířit projekt \texttt{GTTG.Model} o~další strategie a~konfigurace view modelu
+\end{itemize}
+
+Aplikaci SZDC by bylo možné dále rozšířit a~upravit:
+\begin{itemize}
+	\item	Při získání vhodného zdroje dat doplnit obsah nákresného jízdního řádu vizualizací dalších pravidel. Vytvořili jsme již další pravidla, která jsou součástí modelu a view model s nimi pracuje, ale současná implementace \texttt{IStaticDataProvider} je nahrazuje základními hodnotami, jelikož k nim nemá žádný relevantní zdroj dat:
+	\begin{itemize}
+		 \item  Vykreslované dekorace šikmé čáry průběhu jízdy vlaku -- bílá kolečka (vlak jedoucí podle potřeby) nebo černé čárky kolmo k čáře (vlak jede po nesprávné koleji), podle pravidel záhlaví nákresného jízdního řádu
+		 \item	Vizualizace horizontálních čár dopravních bodů podle jejich typů (pravidlo 13.1.2 směrnice č. 69 v \texttt{/szdc/documents/podklady-njr.pdf})
+		 \item  Doplnění informací umístěných vedle kót v ostrých úhlech s vytvořením jejich vizualizace a získáním zdroje dat
+	\end{itemize}
+	\item	Vytvořit JSON soubory popisující další tratě podle existujících nákresných jízdních řádů
+	\item	Optimalizovat rychlost načítání dat do aplikace
+	\item	Při rozšiřování dynamického módu přemístit okna a~správu obsahu aplikace do separátních vláken
+	\item   Přemigrovat v~budoucnu WPF projekt na .NET Core 3 
+\end{itemize}
+

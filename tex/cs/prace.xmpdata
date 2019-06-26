@@ -1,0 +1,9 @@
+﻿% Metadata k uložení do PDF, podrobnější popis viz dokumentace balíčku pdfx.
+
+\Author{Jakub Sýkora}
+\Title{GTTG – aplikace pro práci s grafikonem vlakové dopravy}
+\Keywords{Nákresné jízdní řády\sep Grafikon vlakové dopravy\sep SkiaSharp\sep .NET\sep Knihovna}
+\Subject{Součástí aplikací pracujících s grafikonem vlakové dopravy je obvykle vizualizace provozu na železniční trati, takzvaný nákresný jízdní řád. Cílem práce je vytvořit knihovnu ulehčující vývojářům tvorbu takovýchto aplikací poskytnutím grafické komponenty, která vykresluje jejich vlastní vizualizaci nákresného jízdního řádu.
+Komponenta, určená pro aplikace na platformě .NET, využívá ke kreslení 2D grafickou knihovnu SkiaSharp a je integrovatelná do více frameworků uživatelských rozhraní. Knihovna umožňuje interaktivně pracovat s vykreslovaným nákresným jízdním řádem, například přibližováním zobrazovaného obsahu nebo klikáním na vykreslované prvky pomocí myši. Aby se dále ulehčilo vytváření aplikací, knihovna nabízí lehce rozšiřitelnou základní vizualizaci nákresného jízdního řádu.
+Jako referenční příklad využití knihovny jsme vytvořili v GUI frameworku WPF aplikaci pro prohlížení nákresných jízdních řádů organizace Správy železniční dopravní cesty  spravující provoz na železničních tratích České republiky.}
+\Publisher{Univerzita Karlova}

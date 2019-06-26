@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="145mm"
+   height="75mm"
+   viewBox="0 0 145 75"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="kap6_szdc_structure.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="382.80068"
+     inkscape:cy="116.10995"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-222)">
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.158545,232.09964 c 0,0 -0.219171,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.647582,0 42.647582,0 0,0 3.893331,-0.51145 3.955222,4.34764 0.0619,4.85909 -3.949531,4.41594 -3.949531,4.41594 l -42.650421,-0.003 c 0,0 -3.960902,0.34278 -3.949526,-4.41594 z"
+       id="path895-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.291195,242.61644 c 0,0 -0.219171,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.647584,0 42.647584,0 0,0 3.893327,-0.51145 3.955221,4.34764 0.0619,4.85909 -3.949533,4.41594 -3.949533,4.41594 l -42.650421,-0.003 c 0,0 -3.960901,0.34278 -3.949525,-4.41594 z"
+       id="path895-7-7"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.07698382;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.46190289, 0.46190289;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4906"
+       width="61.311089"
+       height="21.444761"
+       x="7.3255281"
+       y="226.61206" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="26.141167"
+       y="233.10048"
+       id="text6687"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934"
+         x="26.141167"
+         y="233.10048">SZDC.Editor</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.06846943;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.41081661, 0.41081661;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4906-2"
+       width="61.289967"
+       height="32.544159"
+       x="75.86763"
+       y="226.47005" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.0669298"
+       y="225.28812"
+       id="text4973"><tspan
+         sodipodi:role="line"
+         id="tspan4971"
+         x="7.0669298"
+         y="225.28812"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">aplikační logika</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="75.730095"
+       y="266.5528"
+       id="text4973-5-5-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5159"
+         x="75.730095"
+         y="266.5528">Data</tspan></text>
+    <path
+       style="fill:#d4ff2a;fill-opacity:0.45161288;stroke:#88aa00;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.175373,273.06217 c 0,0 -0.219171,-4.31615 3.946674,-4.34424 4.165844,-0.0281 42.647583,0 42.647583,0 0,0 3.89333,-0.51145 3.95523,4.34764 0.0619,4.85909 -3.94954,4.41594 -3.94954,4.41594 l -42.650421,-0.003 c 0,0 -3.960902,0.34278 -3.949526,-4.41594 z"
+       id="path895-7-2-6-4-5"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:#4169e1;fill-opacity:0.45098039;fill-rule:evenodd;stroke:none;stroke-width:0.08499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.51, 0.51;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5294"
+       width="8.9535294"
+       height="4.6772165"
+       x="7.2929268"
+       y="276.78427" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="17.43745"
+       y="281.36563"
+       id="text4973-7"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5314"
+         x="17.43745"
+         y="281.36563">.NET Standard 2.0</tspan></text>
+    <rect
+       style="opacity:1;fill:#d4ff2a;fill-opacity:0.45098039;fill-rule:evenodd;stroke:none;stroke-width:0.08499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.51000001, 0.51000001;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5294-6"
+       width="8.9535294"
+       height="4.6772165"
+       x="7.2562981"
+       y="283.30441" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="17.156681"
+       y="287.93033"
+       id="text4973-7-2-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5384"
+         x="17.156681"
+         y="287.93033">.NET Framework 4.7.2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="27.791506"
+       y="243.53798"
+       id="text6687-4"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5525"
+         x="27.791506"
+         y="243.53798">SZDC.Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="98.353287"
+       y="274.17245"
+       id="text6687-7-5-4-8"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5614"
+         x="98.353287"
+         y="274.17245">SZDC.Data</tspan></text>
+    <rect
+       style="opacity:1;fill:#cccccc;fill-opacity:0.45098039;fill-rule:evenodd;stroke:none;stroke-width:0.08499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.51000001, 0.51000001;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5294-6-6"
+       width="8.9535294"
+       height="4.6772165"
+       x="7.3035469"
+       y="289.91879" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="17.220631"
+       y="294.52798"
+       id="text4973-7-2-6-4"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan893"
+         x="17.220631"
+         y="294.52798">.NET Core 2.0</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.103271,242.22008 -8.4734949,0.004 -0.038146,-10.12234 8.5669149,-0.002"
+       id="path887"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 81.841285,273.06028 -9.542681,-0.0198 -0.05661,-41.24157 8.400336,-0.001"
+       id="path887-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.103271,242.22008 -1.26412,-0.63288 v 1.28158 l 1.26412,-0.6487"
+       id="path5394-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 81.841285,273.06028 -1.264119,-0.63288 v 1.28158 l 1.264119,-0.6487"
+       id="path5394-9-4"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="75.584923"
+       y="225.46585"
+       id="text4973-6"><tspan
+         sodipodi:role="line"
+         id="tspan4971-2"
+         x="75.584923"
+         y="225.46585"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">UI</tspan></text>
+    <path
+       style="fill:#d4ff2a;fill-opacity:0.45098039;stroke:#88aa00;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 80.842778,232.21515 c 0,0 -0.219172,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.647598,0 42.647598,0 0,0 3.89332,-0.51145 3.95522,4.34764 0.0619,4.85909 -3.94953,4.41594 -3.94953,4.41594 l -42.650437,-0.003 c 0,0 -3.960901,0.34278 -3.949525,-4.41594 z"
+       id="path895-7-2-6-4-53"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.275047"
+       y="233.34251"
+       id="text6687-7-5-4-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5585-3"
+         x="97.275047"
+         y="233.34251">SZDC.WPF</tspan></text>
+    <path
+       style="fill:#cccccc;fill-opacity:0.16589864;stroke:#8a916f;stroke-width:0.39874309;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.78491717, 4.78491717;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 80.895716,242.53788 c 0,0 -0.219172,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.6476,0 42.6476,0 0,0 3.89332,-0.51145 3.95522,4.34764 0.0619,4.85909 -3.94953,4.41594 -3.94953,4.41594 l -42.650439,-0.003 c 0,0 -3.960901,0.34278 -3.949525,-4.41594 z"
+       id="path895-7-2-6-4-53-5"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="92.697777"
+       y="243.66524"
+       id="text6687-7-5-4-6-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5585-3-4"
+         x="92.697777"
+         y="243.66524">SZDC.Avalonia</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.05756578;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.34539471, 0.34539471;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4906-2-6"
+       width="61.300869"
+       height="23.000175"
+       x="75.978455"
+       y="267.27051" />
+    <path
+       style="fill:#cccccc;fill-opacity:0.16589864;stroke:#a7ac93;stroke-width:0.39874309;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.78491722, 4.78491722;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 80.834592,253.23916 c 0,0 -0.219172,-4.31615 3.946674,-4.34424 4.165844,-0.0281 42.647594,0 42.647594,0 0,0 3.89332,-0.51145 3.95522,4.34764 0.0619,4.85909 -3.94953,4.41594 -3.94953,4.41594 l -42.650432,-0.003 c 0,0 -3.960902,0.34278 -3.949526,-4.41594 z"
+       id="path895-7-2-6-4-53-5-3"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.9617"
+       y="254.567"
+       id="text6687-7-5-4-6-6-7"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5585-3-4-7"
+         x="88.9617"
+         y="254.567">SZDC.XamarinForms</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.4509804;stroke:#4124ff;stroke-width:0.39874309;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 82.361233,283.85013 c 0,0 -0.219172,-4.31615 3.946674,-4.34424 4.165844,-0.0281 42.647593,0 42.647593,0 0,0 3.89332,-0.51145 3.95522,4.34764 0.0619,4.85909 -3.94953,4.41594 -3.94953,4.41594 l -42.650431,-0.003 c 0,0 -3.960902,0.34278 -3.949526,-4.41594 z"
+       id="path895-7-2-6-4-53-5-3-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="92.070671"
+       y="284.68304"
+       id="text6687-7-5-4-8-8"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5614-0"
+         x="92.070671"
+         y="284.68304">SZDC.JsonParser</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.22964,283.99574 6.73614,0.004 -0.003,-10.88112 -7.05081,-0.0158"
+       id="path887-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.22964,283.99574 1.26412,0.63288 v -1.28158 l -1.26412,0.6487"
+       id="path5394-9-4-2"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 62.897601,231.81321 17.744729,-0.0153"
+       id="path2679"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.06199,231.80813 1.26412,0.63288 v -1.28158 l -1.26412,0.6487"
+       id="path5394-9-4-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.125943,259.42392 c 0,0 -0.219171,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.647583,0 42.647583,0 0,0 3.89333,-0.51145 3.955222,4.34764 0.0619,4.85909 -3.949531,4.41594 -3.949531,4.41594 l -42.650422,-0.003 c 0,0 -3.960902,0.34278 -3.949526,-4.41594 z"
+       id="path895-7-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 12.258593,269.94072 c 0,0 -0.219171,-4.31615 3.946674,-4.34424 4.165843,-0.0281 42.647584,0 42.647584,0 0,0 3.893328,-0.51145 3.955222,4.34764 0.0619,4.85909 -3.949533,4.41594 -3.949533,4.41594 l -42.650422,-0.003 c 0,0 -3.960901,0.34278 -3.949525,-4.41594 z"
+       id="path895-7-7-7"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.07698382;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.46190289, 0.46190289;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4906-5"
+       width="61.311089"
+       height="21.444761"
+       x="7.2929268"
+       y="253.93636" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="26.108564"
+       y="260.42477"
+       id="text6687-3"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1"
+         x="26.108564"
+         y="260.42477">GTTG.Core</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Courier;-inkscape-font-specification:'Courier, Thin';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="26.037951"
+       y="271.10159"
+       id="text6687-4-6"><tspan
+         style="stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan5525-1"
+         x="26.037951"
+         y="271.10159">GTTG.Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.3078394"
+       y="253.03513"
+       id="text4973-0"><tspan
+         sodipodi:role="line"
+         id="tspan4971-5"
+         x="7.3078394"
+         y="253.03513"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">knihovna GTTG</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.235876,259.42392 -3.6662955,0.0214 0.02205,-27.34358 8.5669145,-0.002"
+       id="path887-68"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.235876,259.42392 -1.26412,-0.63288 v 1.28158 l 1.26412,-0.6487"
+       id="path5394-9-5"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="144mm"
+   height="50mm"
+   viewBox="0 0 144 50"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="kap6_szdc_application_logic.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="289.85395"
+     inkscape:cy="112.92101"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-247)">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.18800436;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.12802616, 1.12802616;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4906"
+       width="70.116173"
+       height="38.92054"
+       x="6.2279115"
+       y="247.82704" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.45915735;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect1858"
+       width="26.646524"
+       height="17.718966"
+       x="113.60336"
+       y="254.14322" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.36891747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.3564572,263.57704 c 0,0 -0.2923219,-2.77006 5.2639228,-2.78809 5.556244,-0.018 56.881725,0 56.881725,0 0,0 5.192764,-0.32824 5.27532,2.79028 0.08255,3.11852 -5.267732,2.83411 -5.267732,2.83411 l -56.885508,-0.002 c 0,0 -5.282901,0.22 -5.2677278,-2.83411 z"
+       id="path895-7-2-6-4-5-9-9"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="11.712123"
+       y="264.77661"
+       id="text6687-0-4-2-5"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-3"
+         x="11.712123"
+         y="264.77661">StaticTimetableServiceLocator</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.39874309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.4276198,253.69793 c 0,0 -0.219171,-4.31615 3.9466742,-4.34424 4.165843,-0.0281 42.647582,0 42.647582,0 0,0 3.89333,-0.51145 3.955222,4.34764 0.0619,4.85909 -3.949531,4.41594 -3.949531,4.41594 l -42.650421,-0.003 c 0,0 -3.9609022,0.34278 -3.9495262,-4.41594 z"
+       id="path895-7"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="15.101726"
+       y="254.66296"
+       id="text6687-0-4-2-0"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6"
+         x="15.101726"
+         y="254.66296">ApplicationEditor</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.31147152px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 85.101728,250.39197 c 0,0 -0.219171,-2.63358 3.946674,-2.65072 4.165843,-0.0171 42.647578,0 42.647578,0 0,0 3.89333,-0.31207 3.95522,2.6528 0.0619,2.96486 -3.94953,2.69447 -3.94953,2.69447 l -42.650416,-0.002 c 0,0 -3.960902,0.20915 -3.949526,-2.69447 z"
+       id="path895-7-2"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.345673"
+       y="251.56537"
+       id="text6687-0-4-2-0-8"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5"
+         x="89.345673"
+         y="251.56537">StaticTrainTimetable</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.28317416px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 15.15048,277.57859 c 0,0 -0.219171,-2.17679 3.946674,-2.19096 4.165843,-0.0142 42.647583,0 42.647583,0 0,0 3.89333,-0.25794 3.955222,2.19268 0.0619,2.45061 -3.949531,2.22712 -3.949531,2.22712 l -42.650422,-0.002 c 0,0 -3.960902,0.17288 -3.949526,-2.22712 z"
+       id="path895-7-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.0495"
+       y="278.38153"
+       id="text6687-0-4-2-5-5-9"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-3-1-7"
+         x="20.0495"
+         y="278.38153">DynamicDataProvider</tspan></text>
+    <path
+       style="fill:#d4ff2a;fill-opacity:0.45161288;stroke:#88aa00;stroke-width:0.28120807px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 14.755265,283.43312 c 0,0 -0.219171,-2.14668 3.946674,-2.16065 4.165844,-0.014 42.647585,0 42.647585,0 0,0 3.893328,-0.25437 3.95523,2.16234 0.0619,2.4167 -3.949541,2.1963 -3.949541,2.1963 l -42.650422,-10e-4 c 0,0 -3.960902,0.17048 -3.949526,-2.19631 z"
+       id="path895-7-2-6-4-5"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.432344"
+       y="284.4538"
+       id="text6687-0-4-2-5-5-9-0"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-3-1-7-4"
+         x="20.432344"
+         y="284.4538">IStaticDataProvider</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.31147152px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 85.290449,275.35078 c 0,0 -0.219171,-2.63358 3.946674,-2.65072 4.165843,-0.0171 42.647577,0 42.647577,0 0,0 3.89333,-0.31207 3.95522,2.6528 0.0619,2.96486 -3.94953,2.69447 -3.94953,2.69447 l -42.650415,-0.002 c 0,0 -3.960902,0.20915 -3.949526,-2.69447 z"
+       id="path895-7-2-8"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.845047"
+       y="276.22076"
+       id="text6687-0-4-2-0-8-4"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-0"
+         x="88.845047"
+         y="276.22076">DynamicTrainTimetable</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.20454314;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1.63634508, 1.63634508;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2204"
+       width="24.960854"
+       height="17.793631"
+       x="86.934471"
+       y="254.16347" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.181226,256.86764 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597938,0 20.597938,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599311,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.689812"
+       y="257.91183"
+       id="text6687-0-4-2-0-8-44"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00"
+         x="93.689812"
+         y="257.91183">Model</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.183974,261.06307 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.59794,0 20.59794,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599313,-0.001 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.678497"
+       y="262.14374"
+       id="text6687-0-4-2-0-8-44-4"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-7"
+         x="93.678497"
+         y="262.14374">Tools</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.13948,265.28282 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597934,0 20.597934,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599307,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0-1"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="90.631065"
+       y="266.44324"
+       id="text6687-0-4-2-0-8-44-7"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-2"
+         x="90.631065"
+         y="266.44324">Factories</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45098039;stroke:#4124ff;stroke-width:0.36777544px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.8197144,270.32441 c 0,0 -0.2905145,-2.77006 5.2313826,-2.78809 5.521898,-0.018 56.530103,0 56.530103,0 0,0 5.160665,-0.32824 5.242711,2.79028 0.08204,3.11852 -5.235169,2.83411 -5.235169,2.83411 l -56.533863,-0.002 c 0,0 -5.2502438,0.22 -5.2351646,-2.83411 z"
+       id="path895-7-2-6-4-5-9-9-2"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.647048"
+       y="271.44711"
+       id="text6687-0-4-2-5-5-99"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-3-1-2"
+         x="9.647048"
+         y="271.44711">DynamicTimetableServiceLocator</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5874999, 1.5874999;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 6.2213779,274.40759 69.9892991,0.008"
+       id="path2351"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 74.935693,263.8377 6.781964,-0.0125 -0.02565,-13.43747 3.255205,-0.006"
+       id="path2410"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 74.98294,270.53018 5.009278,-0.0175 0.01181,4.84761 5.132864,-6.4e-4"
+       id="path2412"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.10107836;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.80862683, 0.80862683;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2414"
+       width="26.646528"
+       height="4.56388"
+       x="6.0513735"
+       y="290.29785" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6.0307108,292.53467 -3.0168901,8.1e-4 0.049621,-38.83636 4.1722369,-0.0101"
+       id="path2416"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.7349567"
+       y="293.61053"
+       id="text6687-0-4-2-0-84"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-8"
+         x="7.7349567"
+         y="293.61053">UI commands</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.284212,269.57296 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597932,0 20.597932,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599305,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0-1-0"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.472855"
+       y="270.56635"
+       id="text6687-0-4-2-0-8-44-7-3"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-2-5"
+         x="89.472855"
+         y="270.56635">Components</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.10107836;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.80862684, 0.80862684;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2414-2"
+       width="26.646528"
+       height="4.56388"
+       x="113.60336"
+       y="254.14322" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="115.42867"
+       y="257.59766"
+       id="text6687-0-4-2-0-84-8"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-8-0"
+         x="115.42867"
+         y="257.59766">UI commands</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 113.48932,256.80935 -0.81852,-0.0167 v 4.32643 h -0.95215"
+       id="path2588"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.45915735;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect1858-5"
+       width="26.646524"
+       height="17.718967"
+       x="113.41574"
+       y="278.69965" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.20454314;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:1.6363451, 1.6363451;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2204-8"
+       width="24.960854"
+       height="17.793631"
+       x="86.746864"
+       y="278.71988" />
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 86.993619,281.42407 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597935,0 20.597935,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599308,-0.001 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-2"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.502205"
+       y="282.46823"
+       id="text6687-0-4-2-0-8-44-1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-4"
+         x="93.502205"
+         y="282.46823">Model</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 86.996367,285.6195 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597937,0 20.597937,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.59931,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0-7"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.490891"
+       y="286.70016"
+       id="text6687-0-4-2-0-8-44-4-5"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-7-6"
+         x="93.490891"
+         y="286.70016">Tools</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 86.951873,289.83925 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597931,0 20.597931,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599304,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0-1-6"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="90.443459"
+       y="290.99966"
+       id="text6687-0-4-2-0-8-44-7-1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-2-58"
+         x="90.443459"
+         y="290.99966">Factories</tspan></text>
+    <path
+       style="fill:#4169e1;fill-opacity:0.45161288;stroke:#4124ff;stroke-width:0.18234578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 87.096605,294.12939 c 0,0 -0.105855,-1.86884 1.906166,-1.881 2.012019,-0.0121 20.597929,0 20.597929,0 0,0 1.8804,-0.22145 1.91029,1.88248 0.0299,2.10392 -1.90754,1.91205 -1.90754,1.91205 l -20.599302,-10e-4 c 0,0 -1.913037,0.14841 -1.907543,-1.91205 z"
+       id="path895-7-2-6-0-1-0-4"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6463586"
+       inkscape:transform-center-y="-0.18965384" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.285248"
+       y="295.12277"
+       id="text6687-0-4-2-0-8-44-7-3-4"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-5-00-2-5-9"
+         x="89.285248"
+         y="295.12277">Components</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.10107836;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.80862685, 0.80862685;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2414-2-8"
+       width="26.646528"
+       height="4.56388"
+       x="113.41574"
+       y="278.69965" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="115.24106"
+       y="282.15405"
+       id="text6687-0-4-2-0-84-8-1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+         sodipodi:role="line"
+         id="tspan4934-1-0-7-6-8-0-7"
+         x="115.24106"
+         y="282.15405">UI commands</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 113.30171,281.36578 -0.81852,-0.0167 v 4.32643 h -0.95215"
+       id="path2588-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1325;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 117.632,258.74705 0.0668,12.96257"
+       id="path2682"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffcc00;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 119.70033,271.51023 2.17337,-3.47266 4.29948,-0.0472 4.70108,-9.16592"
+       id="path2684"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.13249999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 117.85272,283.3222 0.0668,12.96257"
+       id="path2682-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffcc00;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 120.0492,296.04932 2.27334,-3.53779 4.8192,-4.06324 1.89579,-5.00228"
+       id="path2704"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#ffcc00;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.5279,296.05506 -4.63021,-5.24442 -5.00818,-2.12612 -0.63509,-5.23737"
+       id="path2706"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
